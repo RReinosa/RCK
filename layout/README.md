@@ -1,12 +1,4 @@
-# RCK
-
-### Introduction
-----
-**Reinosa Custom Keyboard (RCK)** is an open source project dedicated to creating a complete guide on how to create your own custom keyboard from scratch.
-
-In the following sections, we will discuss the step-by-step, hardware/software recommendations and the methodology used for the success of this project.
-
-### Layout design (optional)
+### Layout design
 ----
 The first step in creating your own custom mechanical keyboard is whether you want to use an existing keyboard layout (which will make it easier to find the necessary parts) or whether you want to customise the keyboard layout entirely.
 
@@ -16,11 +8,6 @@ In this case, we have used the online tool http://www.keyboard-layout-editor.com
 
 The end result of our first approximation of the final design will be this:
 
-![image-1](./1.layout/layout.png)
+![image-1](./layout.png)
 
-In the layout folder, you will find the *.json* used for the design of this layout.
-
-### Version control and release
-----
-Version 1.0
-Under development.
+In this folder, you will find the *.json* used for the design of this layout.
