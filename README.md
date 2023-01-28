@@ -16,7 +16,7 @@ In this case, we have used the online tool http://www.keyboard-layout-editor.com
 
 The end result of our first approximation of the final design will be this:
 
-![image-1](./1.layout/layout.png)
+![image-1](./layout/layout.png)
 
 In the layout folder, you will find the *.json* used for the design of this layout.
 
