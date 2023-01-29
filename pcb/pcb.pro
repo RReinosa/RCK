@@ -1,4 +1,4 @@
-update=28/01/2023 18:35:24
+update=29/01/2023 22:33:13
 version=1
 last_client=kicad
 [general]
@@ -34,7 +34,7 @@ LibDir=
 [schematic_editor]
 version=1
 PageLayoutDescrFile=
-PlotDirectoryName=aa
+PlotDirectoryName=diseño_pcb
 SubpartIdSeparator=0
 SubpartFirstId=65
 NetFmtName=
