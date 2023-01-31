@@ -780,8 +780,6 @@ Wire Wire Line
 Wire Wire Line
 	18150 3100 18900 3100
 Wire Wire Line
-	20400 3100 21150 3100
-Wire Wire Line
 	19650 3100 20400 3100
 Wire Wire Line
 	18900 3100 19650 3100
@@ -812,10 +810,6 @@ Wire Wire Line
 	9900 3000 9900 3100
 Text GLabel 21750 3100 2    50   Input ~ 0
 R0
-Wire Wire Line
-	21150 3100 21750 3100
-Connection ~ 21150 3100
-Connection ~ 20400 3100
 Connection ~ 18150 3100
 Connection ~ 17400 3100
 Connection ~ 16650 3100
@@ -826,32 +820,8 @@ Connection ~ 13650 3100
 Connection ~ 12900 3100
 Connection ~ 12150 3100
 Connection ~ 11400 3100
-Wire Wire Line
-	21150 3000 21150 3100
-$Comp
-L Switch:SW_Push SW16
-U 1 1 6406DE3F
-P 20950 2700
-F 0 "SW16" H 20950 2985 50  0000 C CNN
-F 1 "SW_Push" H 20950 2894 50  0000 C CNN
-F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" H 20950 2900 50  0001 C CNN
-F 3 "~" H 20950 2900 50  0001 C CNN
-	1    20950 2700
-	1    0    0    -1  
-$EndComp
 Text GLabel 20750 2100 1    50   Input ~ 0
 C15
-$Comp
-L Diode:1N4148W D16
-U 1 1 6406DE37
-P 21150 2850
-F 0 "D16" H 21100 3000 50  0000 C CNN
-F 1 "1N4148W" H 21100 2750 50  0000 C CNN
-F 2 "Diode_SMD:D_SOD-123" H 21150 2675 50  0001 C CNN
-F 3 "https://www.vishay.com/docs/85748/1n4148w.pdf" H 21150 2850 50  0001 C CNN
-	1    21150 2850
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	20400 3000 20400 3100
 $Comp
@@ -1433,8 +1403,6 @@ Wire Wire Line
 	19200 3550 19350 3550
 Wire Wire Line
 	19950 3550 20100 3550
-Wire Wire Line
-	20700 3550 20850 3550
 $Comp
 L power:+5V #PWR06
 U 1 1 64AF471E
@@ -1498,11 +1466,6 @@ Wire Wire Line
 Connection ~ 19650 3250
 Wire Wire Line
 	19650 3250 20400 3250
-Connection ~ 20400 3250
-Wire Wire Line
-	20400 3250 21150 3250
-Wire Wire Line
-	21150 3850 20400 3850
 Connection ~ 10650 3850
 Wire Wire Line
 	10650 3850 9900 3850
@@ -1542,7 +1505,6 @@ Wire Wire Line
 Connection ~ 19650 3850
 Wire Wire Line
 	19650 3850 18900 3850
-Connection ~ 20400 3850
 Wire Wire Line
 	20400 3850 19650 3850
 Wire Wire Line
@@ -1658,7 +1620,7 @@ U 1 1 64DBEA5C
 P 19450 4350
 F 0 "SW31" H 19450 4635 50  0000 C CNN
 F 1 "SW_Push" H 19450 4544 50  0000 C CNN
-F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" H 19450 4550 50  0001 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_2.00u_PCB" H 19450 4550 50  0001 C CNN
 F 3 "~" H 19450 4550 50  0001 C CNN
 	1    19450 4350
 	1    0    0    -1  
@@ -2356,7 +2318,7 @@ U 1 1 6503290C
 P 20950 6100
 F 0 "SW49" H 20950 6385 50  0000 C CNN
 F 1 "SW_Push" H 20950 6294 50  0000 C CNN
-F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" H 20950 6300 50  0001 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_ISOEnter_PCB" H 20950 6300 50  0001 C CNN
 F 3 "~" H 20950 6300 50  0001 C CNN
 	1    20950 6100
 	1    0    0    -1  
@@ -3377,7 +3339,7 @@ U 1 1 65032B4F
 P 12700 7750
 F 0 "SW54" H 12700 8035 50  0000 C CNN
 F 1 "SW_Push" H 12700 7944 50  0000 C CNN
-F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" H 12700 7950 50  0001 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.75u_PCB" H 12700 7950 50  0001 C CNN
 F 3 "~" H 12700 7950 50  0001 C CNN
 	1    12700 7750
 	1    0    0    -1  
@@ -3401,7 +3363,7 @@ U 1 1 65032B5C
 P 11950 7750
 F 0 "SW53" H 11950 8035 50  0000 C CNN
 F 1 "SW_Push" H 11950 7944 50  0000 C CNN
-F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" H 11950 7950 50  0001 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_2.00u_Vertical_PCB" H 11950 7950 50  0001 C CNN
 F 3 "~" H 11950 7950 50  0001 C CNN
 	1    11950 7750
 	1    0    0    -1  
@@ -4134,7 +4096,7 @@ U 1 1 651A6CC2
 P 12700 9550
 F 0 "SW70" H 12700 9835 50  0000 C CNN
 F 1 "SW_Push" H 12700 9744 50  0000 C CNN
-F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" H 12700 9750 50  0001 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_2.00u_PCB" H 12700 9750 50  0001 C CNN
 F 3 "~" H 12700 9750 50  0001 C CNN
 	1    12700 9550
 	1    0    0    -1  
@@ -4688,7 +4650,7 @@ U 1 1 651A6E0E
 P 18700 11300
 F 0 "SW94" H 18700 11585 50  0000 C CNN
 F 1 "SW_Push" H 18700 11494 50  0000 C CNN
-F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" H 18700 11500 50  0001 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.25u_PCB" H 18700 11500 50  0001 C CNN
 F 3 "~" H 18700 11500 50  0001 C CNN
 	1    18700 11300
 	1    0    0    -1  
@@ -4760,7 +4722,7 @@ U 1 1 651A6E35
 P 16450 11300
 F 0 "SW91" H 16450 11585 50  0000 C CNN
 F 1 "SW_Push" H 16450 11494 50  0000 C CNN
-F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" H 16450 11500 50  0001 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_6.25u_PCB" H 16450 11500 50  0001 C CNN
 F 3 "~" H 16450 11500 50  0001 C CNN
 	1    16450 11300
 	1    0    0    -1  
@@ -4832,7 +4794,7 @@ U 1 1 651A6E5C
 P 14200 11300
 F 0 "SW88" H 14200 11585 50  0000 C CNN
 F 1 "SW_Push" H 14200 11494 50  0000 C CNN
-F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" H 14200 11500 50  0001 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.50u_PCB" H 14200 11500 50  0001 C CNN
 F 3 "~" H 14200 11500 50  0001 C CNN
 	1    14200 11300
 	1    0    0    -1  
@@ -4856,7 +4818,7 @@ U 1 1 651A6E69
 P 13450 11300
 F 0 "SW87" H 13450 11585 50  0000 C CNN
 F 1 "SW_Push" H 13450 11494 50  0000 C CNN
-F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" H 13450 11500 50  0001 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_2.00u_Vertical_PCB" H 13450 11500 50  0001 C CNN
 F 3 "~" H 13450 11500 50  0001 C CNN
 	1    13450 11300
 	1    0    0    -1  
@@ -5390,9 +5352,6 @@ Wire Wire Line
 Wire Wire Line
 	9600 12150 8950 12150
 Wire Wire Line
-	9900 13350 21750 13350
-NoConn ~ 10200 13800
-Wire Wire Line
 	8950 13800 9600 13800
 Wire Wire Line
 	9500 2100 9500 2700
@@ -5652,11 +5611,6 @@ Wire Wire Line
 Connection ~ 20000 9550
 Wire Wire Line
 	20000 9550 20000 11300
-Wire Wire Line
-	20750 2100 20750 2700
-Connection ~ 20750 2700
-Wire Wire Line
-	20750 2700 20750 4350
 Connection ~ 20750 4350
 Wire Wire Line
 	20750 4350 20750 6100
@@ -5691,17 +5645,6 @@ F 3 "https://cdn-shop.adafruit.com/product-files/1138/SK6812+LED+datasheet+.pdf"
 	1    18150 10400
 	1    0    0    -1  
 $EndComp
-$Comp
-L LED:SK6812 D32
-U 1 1 6484D498
-P 21150 3550
-F 0 "D32" H 21400 3450 50  0000 L CNN
-F 1 "SK6812" H 21200 3800 50  0000 L CNN
-F 2 "LED_SMD:LED_SK6812_PLCC4_5.0x5.0mm_P3.2mm" H 21200 3250 50  0001 L TNN
-F 3 "https://cdn-shop.adafruit.com/product-files/1138/SK6812+LED+datasheet+.pdf" H 21250 3175 50  0001 L TNN
-	1    21150 3550
-	1    0    0    -1  
-$EndComp
 Text GLabel 8950 12150 0    50   Input ~ 0
 LED5
 Text GLabel 21700 12150 2    50   Input ~ 0
@@ -5722,8 +5665,6 @@ Text GLabel 8950 5200 0    50   Input ~ 0
 LED1
 Text GLabel 21700 5200 2    50   Input ~ 0
 LED2
-Wire Wire Line
-	21450 3550 21700 3550
 Text GLabel 21700 3550 2    50   Input ~ 0
 LED1
 Text GLabel 8950 3550 0    50   Input ~ 0
@@ -5743,4 +5684,63 @@ F 3 "~" H 9200 3550 50  0001 C CNN
 	1    9200 3550
 	0    -1   -1   0   
 $EndComp
+Wire Wire Line
+	20750 2100 20750 4350
+Wire Wire Line
+	21750 3100 20400 3100
+Connection ~ 20400 3100
+Wire Wire Line
+	21700 3550 20700 3550
+Wire Wire Line
+	10650 13250 10650 13350
+$Comp
+L Switch:SW_Push SW?
+U 1 1 644B1697
+P 10450 12950
+F 0 "SW?" H 10450 13235 50  0000 C CNN
+F 1 "SW_Push" H 10450 13144 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" H 10450 13150 50  0001 C CNN
+F 3 "~" H 10450 13150 50  0001 C CNN
+	1    10450 12950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148W D?
+U 1 1 644B169D
+P 10650 13100
+F 0 "D?" H 10600 13250 50  0000 C CNN
+F 1 "1N4148W" H 10600 13000 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-123" H 10650 12925 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/85748/1n4148w.pdf" H 10650 13100 50  0001 C CNN
+	1    10650 13100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LED:SK6812 D?
+U 1 1 644B16A6
+P 10650 13800
+F 0 "D?" H 10900 13700 50  0000 L CNN
+F 1 "SK6812" H 10700 14050 50  0000 L CNN
+F 2 "LED_SMD:LED_SK6812_PLCC4_5.0x5.0mm_P3.2mm" H 10700 13500 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/product-files/1138/SK6812+LED+datasheet+.pdf" H 10750 13425 50  0001 L TNN
+	1    10650 13800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10250 12950 10250 11300
+Connection ~ 10250 11300
+Wire Wire Line
+	9900 13350 10650 13350
+Connection ~ 10650 13350
+Wire Wire Line
+	10650 13350 21750 13350
+Wire Wire Line
+	9900 13500 10650 13500
+Connection ~ 9900 13500
+Wire Wire Line
+	9900 14100 10650 14100
+Connection ~ 9900 14100
+Wire Wire Line
+	10200 13800 10350 13800
+NoConn ~ 10950 13800
 $EndSCHEMATC
