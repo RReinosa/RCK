@@ -297,8 +297,6 @@ Connection ~ 2150 2850
 Wire Wire Line
 	2150 2850 1850 2850
 Wire Wire Line
-	1850 2650 1850 2550
-Wire Wire Line
 	2150 2850 2550 2850
 Wire Wire Line
 	2150 2650 2550 2650
@@ -415,17 +413,6 @@ F 3 "~" H 2100 3550 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:C_Small C8
-U 1 1 63D6D4CE
-P 2250 3850
-F 0 "C8" H 2342 3896 50  0000 L CNN
-F 1 "1uF" H 2342 3805 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 2250 3850 50  0001 C CNN
-F 3 "~" H 2250 3850 50  0001 C CNN
-	1    2250 3850
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR010
 U 1 1 63D6E1EF
 P 2250 4100
@@ -448,17 +435,6 @@ F 2 "" H 2250 3250 50  0001 C CNN
 F 3 "" H 2250 3250 50  0001 C CNN
 	1    2250 3250
 	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C6
-U 1 1 63D9A999
-P 1750 2550
-F 0 "C6" V 1800 2650 50  0000 C CNN
-F 1 "22uF" V 1800 2400 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 1750 2550 50  0001 C CNN
-F 3 "~" H 1750 2550 50  0001 C CNN
-	1    1750 2550
-	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:C_Small C7
@@ -764,17 +740,6 @@ Wire Wire Line
 	6400 2250 6400 2150
 Wire Wire Line
 	6000 2250 5800 2250
-$Comp
-L Device:C_Small C5
-U 1 1 6422B14C
-P 6100 2250
-F 0 "C5" V 6329 2250 50  0000 C CNN
-F 1 "0.1uF" V 6238 2250 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 6100 2250 50  0001 C CNN
-F 3 "~" H 6100 2250 50  0001 C CNN
-	1    6100 2250
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	16650 3100 17400 3100
 Wire Wire Line
@@ -5743,4 +5708,39 @@ Connection ~ 9900 14100
 Wire Wire Line
 	10200 13800 10350 13800
 NoConn ~ 10950 13800
+Wire Wire Line
+	1850 2650 1850 2550
+$Comp
+L Device:C_Small C6
+U 1 1 63D9A999
+P 1750 2550
+F 0 "C6" V 2000 2550 50  0000 C CNN
+F 1 "22uF" V 1900 2550 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 1750 2550 50  0001 C CNN
+F 3 "~" H 1750 2550 50  0001 C CNN
+	1    1750 2550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C_Small C5
+U 1 1 6422B14C
+P 6100 2250
+F 0 "C5" V 5850 2250 50  0000 C CNN
+F 1 "0.1uF" V 5950 2250 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 6100 2250 50  0001 C CNN
+F 3 "~" H 6100 2250 50  0001 C CNN
+	1    6100 2250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C8
+U 1 1 63D6D4CE
+P 2250 3850
+F 0 "C8" H 2000 3850 50  0000 L CNN
+F 1 "1uF" H 2000 3950 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 2250 3850 50  0001 C CNN
+F 3 "~" H 2250 3850 50  0001 C CNN
+	1    2250 3850
+	-1   0    0    1   
+$EndComp
 $EndSCHEMATC

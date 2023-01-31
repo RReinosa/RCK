@@ -122,36 +122,36 @@
       (place SW1 34671 -127889 front 180 (PN SW_Push))
     )
     (component "Crystal:Crystal_SMD_HC49-SD"
-      (place Y1 339408 -112204 front 0 (PN 16MHz))
+      (place Y1 337502 -111950 front 180 (PN 16MHz))
     )
     (component "Package_QFP:TQFP-44_10x10mm_P0.8mm"
-      (place U2 349758 -123380 front 180 (PN "ATmega32U4-AU"))
+      (place U2 350202 -123698 front 180 (PN "ATmega32U4-AU"))
     )
     (component "Package_SO:SOIC-24W_7.5x15.4mm_P1.27mm"
-      (place U1 322834 -122301 front 0 (PN CD74HC4067M))
+      (place U1 323977 -120586 front 0 (PN CD74HC4067M))
     )
     (component Resistor_SMD:R_0805_2012Metric
-      (place R7 393827 -165227 front 90 (PN 22))
-      (place R6 393764 -160338 front 90 (PN 22))
-      (place R5 393827 -155321 front 90 (PN 10k))
-      (place R4 393764 -150129 front 90 (PN 22))
-      (place R3 393764 -144844 front 90 (PN 22))
-      (place R2 393636 -139636 front 90 (PN 330))
-      (place R1 393573 -134620 front 90 (PN 10k))
-      (place C8 378841 -118300 back 270 (PN 1uF))
-      (place C7 378650 -124460 back 270 (PN 22uF))
-      (place C6 386969 -118300 back 270 (PN 22uF))
-      (place C5 390970 -124508 back 270 (PN 0.1uF))
-      (place C4 390970 -118237 back 270 (PN 10uF))
-      (place C3 382460 -124524 back 270 (PN 0.1uF))
-      (place C2 386715 -124524 back 270 (PN 0.1uF))
-      (place C1 382460 -118349 back 270 (PN 0.1uF))
+      (place R7 393764 -134048 front 90 (PN 22))
+      (place R6 393764 -148478 front 90 (PN 22))
+      (place R5 393827 -159336 front 90 (PN 10k))
+      (place R4 393764 -154354 front 90 (PN 22))
+      (place R3 393764 -138748 front 90 (PN 22))
+      (place R2 40591.5 -110363 front 180 (PN 330))
+      (place R1 393764 -143510 front 90 (PN 10k))
+      (place C8 360045 -124284 back 270 (PN 1uF))
+      (place C7 351917 -112204 back 270 (PN 22uF))
+      (place C6 348424 -112156 back 270 (PN 22uF))
+      (place C5 392240 -125158 back 270 (PN 0.1uF))
+      (place C4 391414 -120206 back 270 (PN 10uF))
+      (place C3 384746 -125158 back 270 (PN 0.1uF))
+      (place C2 388493 -125158 back 270 (PN 0.1uF))
+      (place C1 381127 -125158 back 270 (PN 0.1uF))
     )
     (component Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical
-      (place J2 383350 -113348 front 90 (PN ISP))
+      (place J2 366014 -117602 front 180 (PN ISP))
     )
     (component "Connector_USB:USB_C_Receptacle_HRO_TYPE-C-31-M-12"
-      (place J1 364109 -110300 front 180 (PN USB_C_Receptacle_USB2.0))
+      (place J1 377000 -110128 back 180 (PN USB_C_Receptacle_USB2.0))
     )
     (component MountingHole:MountingHole_2.2mm_M2_Pad_Via
       (place H6 299656 -186563 front 0 (PN MountingHole_Pad))
@@ -162,7 +162,7 @@
       (place H1 56134 -153162 front 0 (PN MountingHole_Pad))
     )
     (component Fuse:Fuse_1206_3216Metric
-      (place F1 352108 -111062 front 0 (PN 500mA))
+      (place F1 355981 -112011 front 90 (PN 500mA))
     )
     (component LED_SMD:LED_SK6812_PLCC4_5.0x5.0mm_P3.2mm
       (place D194 342011 -212979 front 0 (PN SK6812))
@@ -1191,7 +1191,7 @@
         D91-1 D90-1 D89-1 D88-1 D87-1 D86-1 D85-1 D84-1 D83-1 D82-1 D81-1 D64-1 D63-1
         D62-1 D61-1 D60-1 D59-1 D58-1 D57-1 D56-1 D55-1 D54-1 D53-1 D52-1 D51-1 D50-1
         D49-1 D31-1 D30-1 D29-1 D28-1 D27-1 D26-1 D25-1 D24-1 D23-1 D22-1 D21-1 D20-1
-        D19-1 D18-1 D17-1 C8-2 C7-1 C6-1 C5-1 C4-2 C3-2 C2-2 C1-2 D32-1)
+        D19-1 D18-1 D17-1 C8-1 C7-1 C6-1 C5-2 C4-2 C3-2 C2-2 C1-2 D32-1)
     )
     (net +5V
       (pins U2-44 U2-34 U2-24 U2-14 U2-7 U2-2 U1-24 R1-1 J2-6 F1-1 D194-3 D192-3 D191-3
@@ -1202,7 +1202,7 @@
         D114-3 D113-3 D96-3 D95-3 D94-3 D93-3 D92-3 D91-3 D90-3 D89-3 D88-3 D87-3
         D86-3 D85-3 D84-3 D83-3 D82-3 D81-3 D64-3 D63-3 D62-3 D61-3 D60-3 D59-3 D58-3
         D57-3 D56-3 D55-3 D54-3 D53-3 D52-3 D51-3 D50-3 D49-3 D31-3 D30-3 D29-3 D28-3
-        D27-3 D26-3 D25-3 D24-3 D23-3 D22-3 D21-3 D20-3 D19-3 D18-3 D17-3 C5-2 C4-1
+        D27-3 D26-3 D25-3 D24-3 D23-3 D22-3 D21-3 D20-3 D19-3 D18-3 D17-3 C5-1 C4-1
         C3-1 C2-1 C1-1 D32-3)
     )
     (net "Net-(C6-Pad2)"
@@ -1210,9 +1210,6 @@
     )
     (net "Net-(C7-Pad2)"
       (pins Y1-2 U2-16 C7-2)
-    )
-    (net "Net-(C8-Pad1)"
-      (pins U2-6 C8-1)
     )
     (net "Net-(D1-Pad2)"
       (pins SW1-2 D1-2)
@@ -1928,60 +1925,63 @@
     (net "Net-(D194-Pad4)"
       (pins D194-4 D32-2)
     )
+    (net "Net-(C8-Pad2)"
+      (pins U2-6 C8-2)
+    )
     (class kicad_default "" +5V C0 C1 C10 C11 C12 C13 C14 C15 C2 C3 C4 C5
       C6 C7 C8 C9 COM D+ "D-" GND LED0 LED1 LED2 LED3 LED4 LED5 LED6 MISO
-      MOSI "Net-(C6-Pad2)" "Net-(C7-Pad2)" "Net-(C8-Pad1)" "Net-(D1-Pad2)"
-      "Net-(D10-Pad2)" "Net-(D100-Pad2)" "Net-(D101-Pad2)" "Net-(D102-Pad2)"
-      "Net-(D103-Pad2)" "Net-(D104-Pad2)" "Net-(D105-Pad2)" "Net-(D106-Pad2)"
-      "Net-(D107-Pad2)" "Net-(D108-Pad2)" "Net-(D109-Pad2)" "Net-(D11-Pad2)"
-      "Net-(D110-Pad2)" "Net-(D111-Pad2)" "Net-(D112-Pad2)" "Net-(D113-Pad4)"
-      "Net-(D114-Pad4)" "Net-(D115-Pad4)" "Net-(D116-Pad4)" "Net-(D117-Pad4)"
-      "Net-(D118-Pad4)" "Net-(D119-Pad4)" "Net-(D12-Pad2)" "Net-(D120-Pad4)"
-      "Net-(D121-Pad4)" "Net-(D122-Pad4)" "Net-(D123-Pad4)" "Net-(D124-Pad4)"
-      "Net-(D125-Pad4)" "Net-(D126-Pad4)" "Net-(D127-Pad4)" "Net-(D129-Pad2)"
-      "Net-(D13-Pad2)" "Net-(D130-Pad2)" "Net-(D131-Pad2)" "Net-(D132-Pad2)"
-      "Net-(D133-Pad2)" "Net-(D134-Pad2)" "Net-(D135-Pad2)" "Net-(D136-Pad2)"
-      "Net-(D137-Pad2)" "Net-(D138-Pad2)" "Net-(D139-Pad2)" "Net-(D14-Pad2)"
-      "Net-(D140-Pad2)" "Net-(D141-Pad2)" "Net-(D142-Pad2)" "Net-(D143-Pad2)"
-      "Net-(D144-Pad2)" "Net-(D145-Pad4)" "Net-(D146-Pad4)" "Net-(D147-Pad4)"
-      "Net-(D148-Pad4)" "Net-(D149-Pad4)" "Net-(D15-Pad2)" "Net-(D150-Pad4)"
-      "Net-(D151-Pad4)" "Net-(D152-Pad4)" "Net-(D153-Pad4)" "Net-(D154-Pad4)"
-      "Net-(D155-Pad4)" "Net-(D156-Pad4)" "Net-(D157-Pad4)" "Net-(D158-Pad4)"
-      "Net-(D159-Pad4)" "Net-(D16-Pad2)" "Net-(D161-Pad2)" "Net-(D162-Pad2)"
-      "Net-(D163-Pad2)" "Net-(D164-Pad2)" "Net-(D165-Pad2)" "Net-(D166-Pad2)"
-      "Net-(D167-Pad2)" "Net-(D168-Pad2)" "Net-(D169-Pad2)" "Net-(D17-Pad2)"
-      "Net-(D17-Pad4)" "Net-(D170-Pad2)" "Net-(D171-Pad2)" "Net-(D172-Pad2)"
-      "Net-(D173-Pad2)" "Net-(D174-Pad2)" "Net-(D175-Pad2)" "Net-(D176-Pad2)"
-      "Net-(D177-Pad4)" "Net-(D178-Pad4)" "Net-(D179-Pad4)" "Net-(D18-Pad4)"
-      "Net-(D180-Pad4)" "Net-(D181-Pad4)" "Net-(D182-Pad4)" "Net-(D183-Pad4)"
-      "Net-(D184-Pad4)" "Net-(D185-Pad4)" "Net-(D186-Pad4)" "Net-(D187-Pad4)"
-      "Net-(D188-Pad4)" "Net-(D189-Pad4)" "Net-(D19-Pad4)" "Net-(D190-Pad4)"
-      "Net-(D191-Pad4)" "Net-(D193-Pad2)" "Net-(D194-Pad4)" "Net-(D2-Pad2)"
-      "Net-(D20-Pad4)" "Net-(D21-Pad4)" "Net-(D22-Pad4)" "Net-(D23-Pad4)"
-      "Net-(D24-Pad4)" "Net-(D25-Pad4)" "Net-(D26-Pad4)" "Net-(D27-Pad4)"
-      "Net-(D28-Pad4)" "Net-(D29-Pad4)" "Net-(D3-Pad2)" "Net-(D30-Pad4)" "Net-(D31-Pad4)"
-      "Net-(D32-Pad4)" "Net-(D33-Pad2)" "Net-(D34-Pad2)" "Net-(D35-Pad2)"
-      "Net-(D36-Pad2)" "Net-(D37-Pad2)" "Net-(D38-Pad2)" "Net-(D39-Pad2)"
-      "Net-(D4-Pad2)" "Net-(D40-Pad2)" "Net-(D41-Pad2)" "Net-(D42-Pad2)" "Net-(D43-Pad2)"
-      "Net-(D44-Pad2)" "Net-(D45-Pad2)" "Net-(D46-Pad2)" "Net-(D47-Pad2)"
-      "Net-(D48-Pad2)" "Net-(D49-Pad4)" "Net-(D5-Pad2)" "Net-(D50-Pad4)" "Net-(D51-Pad4)"
-      "Net-(D52-Pad4)" "Net-(D53-Pad4)" "Net-(D54-Pad4)" "Net-(D55-Pad4)"
-      "Net-(D56-Pad4)" "Net-(D57-Pad4)" "Net-(D58-Pad4)" "Net-(D59-Pad4)"
-      "Net-(D6-Pad2)" "Net-(D60-Pad4)" "Net-(D61-Pad4)" "Net-(D62-Pad4)" "Net-(D63-Pad4)"
-      "Net-(D65-Pad2)" "Net-(D66-Pad2)" "Net-(D67-Pad2)" "Net-(D68-Pad2)"
-      "Net-(D69-Pad2)" "Net-(D7-Pad2)" "Net-(D70-Pad2)" "Net-(D71-Pad2)" "Net-(D72-Pad2)"
-      "Net-(D73-Pad2)" "Net-(D74-Pad2)" "Net-(D75-Pad2)" "Net-(D76-Pad2)"
-      "Net-(D77-Pad2)" "Net-(D78-Pad2)" "Net-(D79-Pad2)" "Net-(D8-Pad2)" "Net-(D80-Pad2)"
-      "Net-(D81-Pad4)" "Net-(D82-Pad4)" "Net-(D83-Pad4)" "Net-(D84-Pad4)"
-      "Net-(D85-Pad4)" "Net-(D86-Pad4)" "Net-(D87-Pad4)" "Net-(D88-Pad4)"
-      "Net-(D89-Pad4)" "Net-(D9-Pad2)" "Net-(D90-Pad4)" "Net-(D91-Pad4)" "Net-(D92-Pad4)"
-      "Net-(D93-Pad4)" "Net-(D94-Pad4)" "Net-(D95-Pad4)" "Net-(D97-Pad2)"
-      "Net-(D98-Pad2)" "Net-(D99-Pad2)" "Net-(F1-Pad2)" "Net-(J1-PadA5)" "Net-(J1-PadA6)"
-      "Net-(J1-PadA7)" "Net-(J1-PadA8)" "Net-(J1-PadB5)" "Net-(J1-PadB8)"
-      "Net-(R1-Pad2)" "Net-(R3-Pad1)" "Net-(R4-Pad1)" "Net-(R5-Pad2)" "Net-(U2-Pad1)"
-      "Net-(U2-Pad12)" "Net-(U2-Pad19)" "Net-(U2-Pad20)" "Net-(U2-Pad21)"
-      "Net-(U2-Pad22)" "Net-(U2-Pad32)" "Net-(U2-Pad42)" "Net-(U2-Pad8)" R0
-      R1 R2 R3 R4 R5 R6 RST S0 S1 S2 S3 SCK SE
+      MOSI "Net-(C5-Pad1)" "Net-(C5-Pad2)" "Net-(C6-Pad1)" "Net-(C6-Pad2)"
+      "Net-(C7-Pad2)" "Net-(C8-Pad1)" "Net-(C8-Pad2)" "Net-(D1-Pad2)" "Net-(D10-Pad2)"
+      "Net-(D100-Pad2)" "Net-(D101-Pad2)" "Net-(D102-Pad2)" "Net-(D103-Pad2)"
+      "Net-(D104-Pad2)" "Net-(D105-Pad2)" "Net-(D106-Pad2)" "Net-(D107-Pad2)"
+      "Net-(D108-Pad2)" "Net-(D109-Pad2)" "Net-(D11-Pad2)" "Net-(D110-Pad2)"
+      "Net-(D111-Pad2)" "Net-(D112-Pad2)" "Net-(D113-Pad4)" "Net-(D114-Pad4)"
+      "Net-(D115-Pad4)" "Net-(D116-Pad4)" "Net-(D117-Pad4)" "Net-(D118-Pad4)"
+      "Net-(D119-Pad4)" "Net-(D12-Pad2)" "Net-(D120-Pad4)" "Net-(D121-Pad4)"
+      "Net-(D122-Pad4)" "Net-(D123-Pad4)" "Net-(D124-Pad4)" "Net-(D125-Pad4)"
+      "Net-(D126-Pad4)" "Net-(D127-Pad4)" "Net-(D129-Pad2)" "Net-(D13-Pad2)"
+      "Net-(D130-Pad2)" "Net-(D131-Pad2)" "Net-(D132-Pad2)" "Net-(D133-Pad2)"
+      "Net-(D134-Pad2)" "Net-(D135-Pad2)" "Net-(D136-Pad2)" "Net-(D137-Pad2)"
+      "Net-(D138-Pad2)" "Net-(D139-Pad2)" "Net-(D14-Pad2)" "Net-(D140-Pad2)"
+      "Net-(D141-Pad2)" "Net-(D142-Pad2)" "Net-(D143-Pad2)" "Net-(D144-Pad2)"
+      "Net-(D145-Pad4)" "Net-(D146-Pad4)" "Net-(D147-Pad4)" "Net-(D148-Pad4)"
+      "Net-(D149-Pad4)" "Net-(D15-Pad2)" "Net-(D150-Pad4)" "Net-(D151-Pad4)"
+      "Net-(D152-Pad4)" "Net-(D153-Pad4)" "Net-(D154-Pad4)" "Net-(D155-Pad4)"
+      "Net-(D156-Pad4)" "Net-(D157-Pad4)" "Net-(D158-Pad4)" "Net-(D159-Pad4)"
+      "Net-(D16-Pad2)" "Net-(D161-Pad2)" "Net-(D162-Pad2)" "Net-(D163-Pad2)"
+      "Net-(D164-Pad2)" "Net-(D165-Pad2)" "Net-(D166-Pad2)" "Net-(D167-Pad2)"
+      "Net-(D168-Pad2)" "Net-(D169-Pad2)" "Net-(D17-Pad2)" "Net-(D17-Pad4)"
+      "Net-(D170-Pad2)" "Net-(D171-Pad2)" "Net-(D172-Pad2)" "Net-(D173-Pad2)"
+      "Net-(D174-Pad2)" "Net-(D175-Pad2)" "Net-(D176-Pad2)" "Net-(D177-Pad4)"
+      "Net-(D178-Pad4)" "Net-(D179-Pad4)" "Net-(D18-Pad4)" "Net-(D180-Pad4)"
+      "Net-(D181-Pad4)" "Net-(D182-Pad4)" "Net-(D183-Pad4)" "Net-(D184-Pad4)"
+      "Net-(D185-Pad4)" "Net-(D186-Pad4)" "Net-(D187-Pad4)" "Net-(D188-Pad4)"
+      "Net-(D189-Pad4)" "Net-(D19-Pad4)" "Net-(D190-Pad4)" "Net-(D191-Pad4)"
+      "Net-(D193-Pad2)" "Net-(D194-Pad4)" "Net-(D2-Pad2)" "Net-(D20-Pad4)"
+      "Net-(D21-Pad4)" "Net-(D22-Pad4)" "Net-(D23-Pad4)" "Net-(D24-Pad4)"
+      "Net-(D25-Pad4)" "Net-(D26-Pad4)" "Net-(D27-Pad4)" "Net-(D28-Pad4)"
+      "Net-(D29-Pad4)" "Net-(D3-Pad2)" "Net-(D30-Pad4)" "Net-(D32-Pad4)" "Net-(D33-Pad2)"
+      "Net-(D34-Pad2)" "Net-(D35-Pad2)" "Net-(D36-Pad2)" "Net-(D37-Pad2)"
+      "Net-(D38-Pad2)" "Net-(D39-Pad2)" "Net-(D4-Pad2)" "Net-(D40-Pad2)" "Net-(D41-Pad2)"
+      "Net-(D42-Pad2)" "Net-(D43-Pad2)" "Net-(D44-Pad2)" "Net-(D45-Pad2)"
+      "Net-(D46-Pad2)" "Net-(D47-Pad2)" "Net-(D48-Pad2)" "Net-(D49-Pad4)"
+      "Net-(D5-Pad2)" "Net-(D50-Pad4)" "Net-(D51-Pad4)" "Net-(D52-Pad4)" "Net-(D53-Pad4)"
+      "Net-(D54-Pad4)" "Net-(D55-Pad4)" "Net-(D56-Pad4)" "Net-(D57-Pad4)"
+      "Net-(D58-Pad4)" "Net-(D59-Pad4)" "Net-(D6-Pad2)" "Net-(D60-Pad4)" "Net-(D61-Pad4)"
+      "Net-(D62-Pad4)" "Net-(D63-Pad4)" "Net-(D65-Pad2)" "Net-(D66-Pad2)"
+      "Net-(D67-Pad2)" "Net-(D68-Pad2)" "Net-(D69-Pad2)" "Net-(D7-Pad2)" "Net-(D70-Pad2)"
+      "Net-(D71-Pad2)" "Net-(D72-Pad2)" "Net-(D73-Pad2)" "Net-(D74-Pad2)"
+      "Net-(D75-Pad2)" "Net-(D76-Pad2)" "Net-(D77-Pad2)" "Net-(D78-Pad2)"
+      "Net-(D79-Pad2)" "Net-(D8-Pad2)" "Net-(D80-Pad2)" "Net-(D81-Pad4)" "Net-(D82-Pad4)"
+      "Net-(D83-Pad4)" "Net-(D84-Pad4)" "Net-(D85-Pad4)" "Net-(D86-Pad4)"
+      "Net-(D87-Pad4)" "Net-(D88-Pad4)" "Net-(D89-Pad4)" "Net-(D9-Pad2)" "Net-(D90-Pad4)"
+      "Net-(D91-Pad4)" "Net-(D92-Pad4)" "Net-(D93-Pad4)" "Net-(D94-Pad4)"
+      "Net-(D95-Pad4)" "Net-(D97-Pad2)" "Net-(D98-Pad2)" "Net-(D99-Pad2)"
+      "Net-(F1-Pad2)" "Net-(J1-PadA5)" "Net-(J1-PadA6)" "Net-(J1-PadA7)" "Net-(J1-PadA8)"
+      "Net-(J1-PadB5)" "Net-(J1-PadB8)" "Net-(R1-Pad2)" "Net-(R3-Pad1)" "Net-(R4-Pad1)"
+      "Net-(R5-Pad2)" "Net-(U2-Pad1)" "Net-(U2-Pad12)" "Net-(U2-Pad19)" "Net-(U2-Pad20)"
+      "Net-(U2-Pad21)" "Net-(U2-Pad22)" "Net-(U2-Pad32)" "Net-(U2-Pad42)"
+      "Net-(U2-Pad8)" R0 R1 R2 R3 R4 R5 R6 RST S0 S1 S2 S3 SCK SE
       (circuit
         (use_via Via[0-1]_800:400_um)
       )
