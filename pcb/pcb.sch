@@ -153,8 +153,6 @@ $EndComp
 NoConn ~ 6750 5650
 NoConn ~ 6750 5550
 Wire Wire Line
-	6750 5350 7050 5350
-Wire Wire Line
 	6150 6850 6150 7000
 Connection ~ 6000 7000
 Wire Wire Line
@@ -282,8 +280,6 @@ Text GLabel 2950 6700 0    50   Input ~ 0
 MISO
 Text GLabel 2950 6800 0    50   Input ~ 0
 SCK
-Text GLabel 2950 6900 0    50   Input ~ 0
-RST
 Text GLabel 3450 6800 2    50   Input ~ 0
 MOSI
 Wire Wire Line
@@ -430,7 +426,7 @@ L power:+5V #PWR09
 U 1 1 63D85C87
 P 2250 3250
 F 0 "#PWR09" H 2250 3100 50  0001 C CNN
-F 1 "+5V" H 2265 3423 50  0000 C CNN
+F 1 "+5V" H 2350 3350 50  0000 C CNN
 F 2 "" H 2250 3250 50  0001 C CNN
 F 3 "" H 2250 3250 50  0001 C CNN
 	1    2250 3250
@@ -966,15 +962,8 @@ Wire Wire Line
 Connection ~ 17400 3850
 Wire Wire Line
 	17400 3850 16650 3850
-Connection ~ 18150 3850
 Wire Wire Line
 	18150 3850 17400 3850
-Connection ~ 18900 3850
-Wire Wire Line
-	18900 3850 18150 3850
-Connection ~ 19650 3850
-Wire Wire Line
-	19650 3850 18900 3850
 Wire Wire Line
 	20400 3850 19650 3850
 Wire Wire Line
@@ -5800,4 +5789,44 @@ F 3 "~" H 2500 9950 50  0001 C CNN
 	1    2500 9950
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	19650 3850 18900 3850
+Connection ~ 19650 3850
+Connection ~ 18150 3850
+Connection ~ 18900 3850
+Wire Wire Line
+	18900 3850 18150 3850
+$Comp
+L Device:C_Small C9
+U 1 1 63F0ED99
+P 1300 3250
+F 0 "C9" H 1392 3296 50  0000 L CNN
+F 1 "100nF" H 1392 3205 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 1300 3250 50  0001 C CNN
+F 3 "~" H 1300 3250 50  0001 C CNN
+	1    1300 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 63F1653C
+P 1300 3500
+F 0 "#PWR0102" H 1300 3250 50  0001 C CNN
+F 1 "GND" H 1305 3327 50  0000 C CNN
+F 2 "" H 1300 3500 50  0001 C CNN
+F 3 "" H 1300 3500 50  0001 C CNN
+	1    1300 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1300 3500 1300 3350
+Wire Wire Line
+	1300 3150 2150 3150
+Wire Wire Line
+	2150 3150 2150 3050
+Wire Wire Line
+	2150 3050 2550 3050
+NoConn ~ 2950 6900
+Wire Wire Line
+	7050 5350 6750 5350
 $EndSCHEMATC
