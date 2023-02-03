@@ -173,17 +173,6 @@ F 3 "" H 7500 5300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Polyfuse F1
-U 1 1 63E4A7E6
-P 7100 5350
-F 0 "F1" V 6875 5350 50  0000 C CNN
-F 1 "500mA" V 6966 5350 50  0000 C CNN
-F 2 "Fuse:Fuse_1206_3216Metric" H 7150 5150 50  0001 L CNN
-F 3 "~" H 7100 5350 50  0001 C CNN
-	1    7100 5350
-	0    1    1    0   
-$EndComp
-$Comp
 L Connector:USB_C_Receptacle_USB2.0 J1
 U 1 1 63E0EB62
 P 6150 5950
@@ -887,11 +876,6 @@ F 3 "" H 9000 3850 50  0001 C CNN
 	1    9000 3850
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	9900 3250 10650 3250
-Connection ~ 10650 3250
-Wire Wire Line
-	10650 3250 11400 3250
 Connection ~ 11400 3250
 Wire Wire Line
 	11400 3250 12150 3250
@@ -2277,7 +2261,7 @@ U 1 1 65032B4F
 P 12700 7750
 F 0 "SW54" H 12700 8035 50  0000 C CNN
 F 1 "SW_Push" H 12700 7944 50  0000 C CNN
-F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_Plate" H 12700 7950 50  0001 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.75u_Plate" H 12700 7950 50  0001 C CNN
 F 3 "~" H 12700 7950 50  0001 C CNN
 	1    12700 7750
 	1    0    0    -1  
@@ -5824,11 +5808,7 @@ Wire Wire Line
 	2150 3050 2550 3050
 NoConn ~ 2950 6900
 Wire Wire Line
-	6750 5350 6950 5350
-Wire Wire Line
 	7500 5300 7500 5350
-Wire Wire Line
-	7500 5350 7250 5350
 $Comp
 L power:GND #PWR0103
 U 1 1 63E50AEB
@@ -5853,4 +5833,24 @@ F 3 "~" H 3300 10850 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3300 10950 3300 11100
+Wire Wire Line
+	9900 3250 10650 3250
+Connection ~ 10650 3250
+Wire Wire Line
+	10650 3250 11400 3250
+Wire Wire Line
+	6750 5350 6950 5350
+Wire Wire Line
+	7500 5350 7250 5350
+$Comp
+L Device:Polyfuse F1
+U 1 1 63E4A7E6
+P 7100 5350
+F 0 "F1" V 6875 5350 50  0000 C CNN
+F 1 "500mA" V 6966 5350 50  0000 C CNN
+F 2 "Fuse:Fuse_1206_3216Metric" H 7150 5150 50  0001 L CNN
+F 3 "~" H 7100 5350 50  0001 C CNN
+	1    7100 5350
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC
