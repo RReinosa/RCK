@@ -2277,7 +2277,7 @@ U 1 1 65032B4F
 P 12700 7750
 F 0 "SW54" H 12700 8035 50  0000 C CNN
 F 1 "SW_Push" H 12700 7944 50  0000 C CNN
-F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_Plate" H 12700 7950 50  0001 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.75u_Plate" H 12700 7950 50  0001 C CNN
 F 3 "~" H 12700 7950 50  0001 C CNN
 	1    12700 7750
 	1    0    0    -1  
