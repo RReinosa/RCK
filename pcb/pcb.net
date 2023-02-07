@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source E:\RCK\pcb\pcb.sch)
-    (date "06/02/2023 21:48:14")
+    (date "07/02/2023 15:54:36")
     (tool "Eeschema (5.1.4)-1")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
