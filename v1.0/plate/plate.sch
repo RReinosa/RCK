@@ -1,0 +1,1342 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A2 23386 16535
+encoding utf-8
+Sheet 1 1
+Title "RCK"
+Date "2023-01-29"
+Rev "1.0"
+Comp "Raúl Reinosa (rreinosa)"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	3300 9150 3300 9250
+Connection ~ 3300 9250
+Wire Wire Line
+	4100 9250 4100 9150
+Wire Wire Line
+	3300 9250 4100 9250
+Wire Wire Line
+	3300 9250 3300 9300
+Wire Wire Line
+	2500 9250 3300 9250
+Wire Wire Line
+	2500 9150 2500 9250
+$Comp
+L power:GND #PWR027
+U 1 1 63FAB0B5
+P 3300 9300
+F 0 "#PWR027" H 3300 9050 50  0001 C CNN
+F 1 "GND" H 3305 9127 50  0000 C CNN
+F 2 "" H 3300 9300 50  0001 C CNN
+F 3 "" H 3300 9300 50  0001 C CNN
+	1    3300 9300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H6
+U 1 1 63FAB0AF
+P 4100 9050
+F 0 "H6" H 4200 9099 50  0000 L CNN
+F 1 "MountingHole_Pad" H 3750 9250 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_Pad_Via" H 4100 9050 50  0001 C CNN
+F 3 "~" H 4100 9050 50  0001 C CNN
+	1    4100 9050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H5
+U 1 1 63FAB0A9
+P 3300 9050
+F 0 "H5" H 3400 9099 50  0000 L CNN
+F 1 "MountingHole_Pad" H 2950 9250 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_Pad_Via" H 3300 9050 50  0001 C CNN
+F 3 "~" H 3300 9050 50  0001 C CNN
+	1    3300 9050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H4
+U 1 1 63FAB0A3
+P 2500 9050
+F 0 "H4" H 2600 9099 50  0000 L CNN
+F 1 "MountingHole_Pad" H 2150 9250 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_Pad_Via" H 2500 9050 50  0001 C CNN
+F 3 "~" H 2500 9050 50  0001 C CNN
+	1    2500 9050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 8250 3300 8350
+Connection ~ 3300 8350
+Wire Wire Line
+	4100 8350 4100 8250
+Wire Wire Line
+	3300 8350 4100 8350
+Wire Wire Line
+	3300 8350 3300 8400
+Wire Wire Line
+	2500 8350 3300 8350
+Wire Wire Line
+	2500 8250 2500 8350
+$Comp
+L power:GND #PWR024
+U 1 1 63F18723
+P 3300 8400
+F 0 "#PWR024" H 3300 8150 50  0001 C CNN
+F 1 "GND" H 3305 8227 50  0000 C CNN
+F 2 "" H 3300 8400 50  0001 C CNN
+F 3 "" H 3300 8400 50  0001 C CNN
+	1    3300 8400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H3
+U 1 1 63ED1D18
+P 4100 8150
+F 0 "H3" H 4200 8199 50  0000 L CNN
+F 1 "MountingHole_Pad" H 3750 8350 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_Pad_Via" H 4100 8150 50  0001 C CNN
+F 3 "~" H 4100 8150 50  0001 C CNN
+	1    4100 8150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H2
+U 1 1 63DB9D5F
+P 3300 8150
+F 0 "H2" H 3400 8199 50  0000 L CNN
+F 1 "MountingHole_Pad" H 2950 8350 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_Pad_Via" H 3300 8150 50  0001 C CNN
+F 3 "~" H 3300 8150 50  0001 C CNN
+	1    3300 8150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H1
+U 1 1 63D950F8
+P 2500 8150
+F 0 "H1" H 2600 8199 50  0000 L CNN
+F 1 "MountingHole_Pad" H 2150 8350 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_Pad_Via" H 2500 8150 50  0001 C CNN
+F 3 "~" H 2500 8150 50  0001 C CNN
+	1    2500 8150
+	1    0    0    -1  
+$EndComp
+NoConn ~ 2000 -600
+NoConn ~ 3500 11650
+Text GLabel 20750 2100 1    50   Input ~ 0
+C15
+Text GLabel 20000 2100 1    50   Input ~ 0
+C14
+Text GLabel 19250 2100 1    50   Input ~ 0
+C13
+Text GLabel 18500 2100 1    50   Input ~ 0
+C12
+Text GLabel 17750 2100 1    50   Input ~ 0
+C11
+Text GLabel 17000 2100 1    50   Input ~ 0
+C10
+Text GLabel 16250 2100 1    50   Input ~ 0
+C9
+Text GLabel 15500 2100 1    50   Input ~ 0
+C8
+Text GLabel 14750 2100 1    50   Input ~ 0
+C7
+Text GLabel 14000 2100 1    50   Input ~ 0
+C6
+Text GLabel 13250 2100 1    50   Input ~ 0
+C5
+Text GLabel 12500 2100 1    50   Input ~ 0
+C4
+Text GLabel 11750 2100 1    50   Input ~ 0
+C3
+Text GLabel 11000 2100 1    50   Input ~ 0
+C2
+Text GLabel 10250 2100 1    50   Input ~ 0
+C1
+Text GLabel 9500 2100 1    50   Input ~ 0
+C0
+$Comp
+L Switch:SW_Push SW49
+U 1 1 6503290C
+P 20950 6100
+F 0 "SW49" H 20950 6385 50  0000 C CNN
+F 1 "SW_Push" H 20950 6294 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_ISOEnter_PCB" H 20950 6300 50  0001 C CNN
+F 3 "~" H 20950 6300 50  0001 C CNN
+	1    20950 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW48
+U 1 1 65032919
+P 20200 6100
+F 0 "SW48" H 20200 6385 50  0000 C CNN
+F 1 "SW_Push" H 20200 6294 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_Plate" H 20200 6300 50  0001 C CNN
+F 3 "~" H 20200 6300 50  0001 C CNN
+	1    20200 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW47
+U 1 1 65032926
+P 19450 6100
+F 0 "SW47" H 19450 6385 50  0000 C CNN
+F 1 "SW_Push" H 19450 6294 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_Plate" H 19450 6300 50  0001 C CNN
+F 3 "~" H 19450 6300 50  0001 C CNN
+	1    19450 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW46
+U 1 1 65032933
+P 18700 6100
+F 0 "SW46" H 18700 6385 50  0000 C CNN
+F 1 "SW_Push" H 18700 6294 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_Plate" H 18700 6300 50  0001 C CNN
+F 3 "~" H 18700 6300 50  0001 C CNN
+	1    18700 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW45
+U 1 1 65032940
+P 17950 6100
+F 0 "SW45" H 17950 6385 50  0000 C CNN
+F 1 "SW_Push" H 17950 6294 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_Plate" H 17950 6300 50  0001 C CNN
+F 3 "~" H 17950 6300 50  0001 C CNN
+	1    17950 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW44
+U 1 1 6503294D
+P 17200 6100
+F 0 "SW44" H 17200 6385 50  0000 C CNN
+F 1 "SW_Push" H 17200 6294 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_Plate" H 17200 6300 50  0001 C CNN
+F 3 "~" H 17200 6300 50  0001 C CNN
+	1    17200 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW43
+U 1 1 6503295A
+P 16450 6100
+F 0 "SW43" H 16450 6385 50  0000 C CNN
+F 1 "SW_Push" H 16450 6294 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_Plate" H 16450 6300 50  0001 C CNN
+F 3 "~" H 16450 6300 50  0001 C CNN
+	1    16450 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW42
+U 1 1 65032967
+P 15700 6100
+F 0 "SW42" H 15700 6385 50  0000 C CNN
+F 1 "SW_Push" H 15700 6294 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_Plate" H 15700 6300 50  0001 C CNN
+F 3 "~" H 15700 6300 50  0001 C CNN
+	1    15700 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW41
+U 1 1 65032974
+P 14950 6100
+F 0 "SW41" H 14950 6385 50  0000 C CNN
+F 1 "SW_Push" H 14950 6294 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_Plate" H 14950 6300 50  0001 C CNN
+F 3 "~" H 14950 6300 50  0001 C CNN
+	1    14950 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW40
+U 1 1 65032981
+P 14200 6100
+F 0 "SW40" H 14200 6385 50  0000 C CNN
+F 1 "SW_Push" H 14200 6294 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_Plate" H 14200 6300 50  0001 C CNN
+F 3 "~" H 14200 6300 50  0001 C CNN
+	1    14200 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW39
+U 1 1 6503298E
+P 13450 6100
+F 0 "SW39" H 13450 6385 50  0000 C CNN
+F 1 "SW_Push" H 13450 6294 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_Plate" H 13450 6300 50  0001 C CNN
+F 3 "~" H 13450 6300 50  0001 C CNN
+	1    13450 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW38
+U 1 1 6503299B
+P 12700 6100
+F 0 "SW38" H 12700 6385 50  0000 C CNN
+F 1 "SW_Push" H 12700 6294 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_Plate" H 12700 6300 50  0001 C CNN
+F 3 "~" H 12700 6300 50  0001 C CNN
+	1    12700 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW37
+U 1 1 650329A8
+P 11950 6100
+F 0 "SW37" H 11950 6385 50  0000 C CNN
+F 1 "SW_Push" H 11950 6294 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_Plate" H 11950 6300 50  0001 C CNN
+F 3 "~" H 11950 6300 50  0001 C CNN
+	1    11950 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW36
+U 1 1 650329B5
+P 11200 6100
+F 0 "SW36" H 11200 6385 50  0000 C CNN
+F 1 "SW_Push" H 11200 6294 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.50u_Plate" H 11200 6300 50  0001 C CNN
+F 3 "~" H 11200 6300 50  0001 C CNN
+	1    11200 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW35
+U 1 1 650329C2
+P 10450 6100
+F 0 "SW35" H 10450 6385 50  0000 C CNN
+F 1 "SW_Push" H 10450 6294 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_Plate" H 10450 6300 50  0001 C CNN
+F 3 "~" H 10450 6300 50  0001 C CNN
+	1    10450 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW34
+U 1 1 650329CE
+P 9700 6100
+F 0 "SW34" H 9700 6385 50  0000 C CNN
+F 1 "SW_Push" H 9700 6294 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_Plate" H 9700 6300 50  0001 C CNN
+F 3 "~" H 9700 6300 50  0001 C CNN
+	1    9700 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW65
+U 1 1 65032AC0
+P 20950 7750
+F 0 "SW65" H 20950 8035 50  0000 C CNN
+F 1 "SW_Push" H 20950 7944 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_Plate" H 20950 7950 50  0001 C CNN
+F 3 "~" H 20950 7950 50  0001 C CNN
+	1    20950 7750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW64
+U 1 1 65032ACD
+P 20200 7750
+F 0 "SW64" H 20200 8035 50  0000 C CNN
+F 1 "SW_Push" H 20200 7944 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_Plate" H 20200 7950 50  0001 C CNN
+F 3 "~" H 20200 7950 50  0001 C CNN
+	1    20200 7750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW63
+U 1 1 65032ADA
+P 19450 7750
+F 0 "SW63" H 19450 8035 50  0000 C CNN
+F 1 "SW_Push" H 19450 7944 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_Plate" H 19450 7950 50  0001 C CNN
+F 3 "~" H 19450 7950 50  0001 C CNN
+	1    19450 7750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW62
+U 1 1 65032AE7
+P 18700 7750
+F 0 "SW62" H 18700 8035 50  0000 C CNN
+F 1 "SW_Push" H 18700 7944 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_Plate" H 18700 7950 50  0001 C CNN
+F 3 "~" H 18700 7950 50  0001 C CNN
+	1    18700 7750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW61
+U 1 1 65032AF4
+P 17950 7750
+F 0 "SW61" H 17950 8035 50  0000 C CNN
+F 1 "SW_Push" H 17950 7944 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_Plate" H 17950 7950 50  0001 C CNN
+F 3 "~" H 17950 7950 50  0001 C CNN
+	1    17950 7750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW60
+U 1 1 65032B01
+P 17200 7750
+F 0 "SW60" H 17200 8035 50  0000 C CNN
+F 1 "SW_Push" H 17200 7944 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_Plate" H 17200 7950 50  0001 C CNN
+F 3 "~" H 17200 7950 50  0001 C CNN
+	1    17200 7750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW59
+U 1 1 65032B0E
+P 16450 7750
+F 0 "SW59" H 16450 8035 50  0000 C CNN
+F 1 "SW_Push" H 16450 7944 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_Plate" H 16450 7950 50  0001 C CNN
+F 3 "~" H 16450 7950 50  0001 C CNN
+	1    16450 7750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW58
+U 1 1 65032B1B
+P 15700 7750
+F 0 "SW58" H 15700 8035 50  0000 C CNN
+F 1 "SW_Push" H 15700 7944 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_Plate" H 15700 7950 50  0001 C CNN
+F 3 "~" H 15700 7950 50  0001 C CNN
+	1    15700 7750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW57
+U 1 1 65032B28
+P 14950 7750
+F 0 "SW57" H 14950 8035 50  0000 C CNN
+F 1 "SW_Push" H 14950 7944 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_Plate" H 14950 7950 50  0001 C CNN
+F 3 "~" H 14950 7950 50  0001 C CNN
+	1    14950 7750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW56
+U 1 1 65032B35
+P 14200 7750
+F 0 "SW56" H 14200 8035 50  0000 C CNN
+F 1 "SW_Push" H 14200 7944 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_Plate" H 14200 7950 50  0001 C CNN
+F 3 "~" H 14200 7950 50  0001 C CNN
+	1    14200 7750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW55
+U 1 1 65032B42
+P 13450 7750
+F 0 "SW55" H 13450 8035 50  0000 C CNN
+F 1 "SW_Push" H 13450 7944 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_Plate" H 13450 7950 50  0001 C CNN
+F 3 "~" H 13450 7950 50  0001 C CNN
+	1    13450 7750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW54
+U 1 1 65032B4F
+P 12700 7750
+F 0 "SW54" H 12700 8035 50  0000 C CNN
+F 1 "SW_Push" H 12700 7944 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.75u_Plate" H 12700 7950 50  0001 C CNN
+F 3 "~" H 12700 7950 50  0001 C CNN
+	1    12700 7750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW53
+U 1 1 65032B5C
+P 11950 7750
+F 0 "SW53" H 11950 8035 50  0000 C CNN
+F 1 "SW_Push" H 11950 7944 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_2.00u_Vertical_PCB" H 11950 7950 50  0001 C CNN
+F 3 "~" H 11950 7950 50  0001 C CNN
+	1    11950 7750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW52
+U 1 1 65032B69
+P 11200 7750
+F 0 "SW52" H 11200 8035 50  0000 C CNN
+F 1 "SW_Push" H 11200 7944 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_Plate" H 11200 7950 50  0001 C CNN
+F 3 "~" H 11200 7950 50  0001 C CNN
+	1    11200 7750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW51
+U 1 1 65032B76
+P 10450 7750
+F 0 "SW51" H 10450 8035 50  0000 C CNN
+F 1 "SW_Push" H 10450 7944 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_Plate" H 10450 7950 50  0001 C CNN
+F 3 "~" H 10450 7950 50  0001 C CNN
+	1    10450 7750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW50
+U 1 1 65032B82
+P 9700 7750
+F 0 "SW50" H 9700 8035 50  0000 C CNN
+F 1 "SW_Push" H 9700 7944 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_Plate" H 9700 7950 50  0001 C CNN
+F 3 "~" H 9700 7950 50  0001 C CNN
+	1    9700 7750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW81
+U 1 1 651A6C33
+P 20950 9550
+F 0 "SW81" H 20950 9835 50  0000 C CNN
+F 1 "SW_Push" H 20950 9744 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_Plate" H 20950 9750 50  0001 C CNN
+F 3 "~" H 20950 9750 50  0001 C CNN
+	1    20950 9550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW80
+U 1 1 651A6C40
+P 20200 9550
+F 0 "SW80" H 20200 9835 50  0000 C CNN
+F 1 "SW_Push" H 20200 9744 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_Plate" H 20200 9750 50  0001 C CNN
+F 3 "~" H 20200 9750 50  0001 C CNN
+	1    20200 9550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW79
+U 1 1 651A6C4D
+P 19450 9550
+F 0 "SW79" H 19450 9835 50  0000 C CNN
+F 1 "SW_Push" H 19450 9744 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_Plate" H 19450 9750 50  0001 C CNN
+F 3 "~" H 19450 9750 50  0001 C CNN
+	1    19450 9550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW78
+U 1 1 651A6C5A
+P 18700 9550
+F 0 "SW78" H 18700 9835 50  0000 C CNN
+F 1 "SW_Push" H 18700 9744 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_Plate" H 18700 9750 50  0001 C CNN
+F 3 "~" H 18700 9750 50  0001 C CNN
+	1    18700 9550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW77
+U 1 1 651A6C67
+P 17950 9550
+F 0 "SW77" H 17950 9835 50  0000 C CNN
+F 1 "SW_Push" H 17950 9744 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_Plate" H 17950 9750 50  0001 C CNN
+F 3 "~" H 17950 9750 50  0001 C CNN
+	1    17950 9550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW76
+U 1 1 651A6C74
+P 17200 9550
+F 0 "SW76" H 17200 9835 50  0000 C CNN
+F 1 "SW_Push" H 17200 9744 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_Plate" H 17200 9750 50  0001 C CNN
+F 3 "~" H 17200 9750 50  0001 C CNN
+	1    17200 9550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW75
+U 1 1 651A6C81
+P 16450 9550
+F 0 "SW75" H 16450 9835 50  0000 C CNN
+F 1 "SW_Push" H 16450 9744 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_Plate" H 16450 9750 50  0001 C CNN
+F 3 "~" H 16450 9750 50  0001 C CNN
+	1    16450 9550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW74
+U 1 1 651A6C8E
+P 15700 9550
+F 0 "SW74" H 15700 9835 50  0000 C CNN
+F 1 "SW_Push" H 15700 9744 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_Plate" H 15700 9750 50  0001 C CNN
+F 3 "~" H 15700 9750 50  0001 C CNN
+	1    15700 9550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW73
+U 1 1 651A6C9B
+P 14950 9550
+F 0 "SW73" H 14950 9835 50  0000 C CNN
+F 1 "SW_Push" H 14950 9744 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_Plate" H 14950 9750 50  0001 C CNN
+F 3 "~" H 14950 9750 50  0001 C CNN
+	1    14950 9550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW72
+U 1 1 651A6CA8
+P 14200 9550
+F 0 "SW72" H 14200 9835 50  0000 C CNN
+F 1 "SW_Push" H 14200 9744 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_Plate" H 14200 9750 50  0001 C CNN
+F 3 "~" H 14200 9750 50  0001 C CNN
+	1    14200 9550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW71
+U 1 1 651A6CB5
+P 13450 9550
+F 0 "SW71" H 13450 9835 50  0000 C CNN
+F 1 "SW_Push" H 13450 9744 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_Plate" H 13450 9750 50  0001 C CNN
+F 3 "~" H 13450 9750 50  0001 C CNN
+	1    13450 9550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW70
+U 1 1 651A6CC2
+P 12700 9550
+F 0 "SW70" H 12700 9835 50  0000 C CNN
+F 1 "SW_Push" H 12700 9744 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_2.00u_PCB" H 12700 9750 50  0001 C CNN
+F 3 "~" H 12700 9750 50  0001 C CNN
+	1    12700 9550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW69
+U 1 1 651A6CCF
+P 11950 9550
+F 0 "SW69" H 11950 9835 50  0000 C CNN
+F 1 "SW_Push" H 11950 9744 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_Plate" H 11950 9750 50  0001 C CNN
+F 3 "~" H 11950 9750 50  0001 C CNN
+	1    11950 9550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW68
+U 1 1 651A6CDC
+P 11200 9550
+F 0 "SW68" H 11200 9835 50  0000 C CNN
+F 1 "SW_Push" H 11200 9744 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_Plate" H 11200 9750 50  0001 C CNN
+F 3 "~" H 11200 9750 50  0001 C CNN
+	1    11200 9550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW67
+U 1 1 651A6CE9
+P 10450 9550
+F 0 "SW67" H 10450 9835 50  0000 C CNN
+F 1 "SW_Push" H 10450 9744 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_Plate" H 10450 9750 50  0001 C CNN
+F 3 "~" H 10450 9750 50  0001 C CNN
+	1    10450 9550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW66
+U 1 1 651A6CF5
+P 9700 9550
+F 0 "SW66" H 9700 9835 50  0000 C CNN
+F 1 "SW_Push" H 9700 9744 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_Plate" H 9700 9750 50  0001 C CNN
+F 3 "~" H 9700 9750 50  0001 C CNN
+	1    9700 9550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW97
+U 1 1 651A6DE7
+P 20950 11300
+F 0 "SW97" H 20950 11585 50  0000 C CNN
+F 1 "SW_Push" H 20950 11494 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_Plate" H 20950 11500 50  0001 C CNN
+F 3 "~" H 20950 11500 50  0001 C CNN
+	1    20950 11300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW96
+U 1 1 651A6DF4
+P 20200 11300
+F 0 "SW96" H 20200 11585 50  0000 C CNN
+F 1 "SW_Push" H 20200 11494 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_Plate" H 20200 11500 50  0001 C CNN
+F 3 "~" H 20200 11500 50  0001 C CNN
+	1    20200 11300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW95
+U 1 1 651A6E01
+P 19450 11300
+F 0 "SW95" H 19450 11585 50  0000 C CNN
+F 1 "SW_Push" H 19450 11494 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_Plate" H 19450 11500 50  0001 C CNN
+F 3 "~" H 19450 11500 50  0001 C CNN
+	1    19450 11300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW94
+U 1 1 651A6E0E
+P 18700 11300
+F 0 "SW94" H 18700 11585 50  0000 C CNN
+F 1 "SW_Push" H 18700 11494 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.25u_Plate" H 18700 11500 50  0001 C CNN
+F 3 "~" H 18700 11500 50  0001 C CNN
+	1    18700 11300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW93
+U 1 1 651A6E1B
+P 17950 11300
+F 0 "SW93" H 17950 11585 50  0000 C CNN
+F 1 "SW_Push" H 17950 11494 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_Plate" H 17950 11500 50  0001 C CNN
+F 3 "~" H 17950 11500 50  0001 C CNN
+	1    17950 11300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW92
+U 1 1 651A6E28
+P 17200 11300
+F 0 "SW92" H 17200 11585 50  0000 C CNN
+F 1 "SW_Push" H 17200 11494 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_Plate" H 17200 11500 50  0001 C CNN
+F 3 "~" H 17200 11500 50  0001 C CNN
+	1    17200 11300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW91
+U 1 1 651A6E35
+P 16450 11300
+F 0 "SW91" H 16450 11585 50  0000 C CNN
+F 1 "SW_Push" H 16450 11494 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_6.25u_PCB" H 16450 11500 50  0001 C CNN
+F 3 "~" H 16450 11500 50  0001 C CNN
+	1    16450 11300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW90
+U 1 1 651A6E42
+P 15700 11300
+F 0 "SW90" H 15700 11585 50  0000 C CNN
+F 1 "SW_Push" H 15700 11494 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_Plate" H 15700 11500 50  0001 C CNN
+F 3 "~" H 15700 11500 50  0001 C CNN
+	1    15700 11300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW89
+U 1 1 651A6E4F
+P 14950 11300
+F 0 "SW89" H 14950 11585 50  0000 C CNN
+F 1 "SW_Push" H 14950 11494 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_Plate" H 14950 11500 50  0001 C CNN
+F 3 "~" H 14950 11500 50  0001 C CNN
+	1    14950 11300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW88
+U 1 1 651A6E5C
+P 14200 11300
+F 0 "SW88" H 14200 11585 50  0000 C CNN
+F 1 "SW_Push" H 14200 11494 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.50u_Plate" H 14200 11500 50  0001 C CNN
+F 3 "~" H 14200 11500 50  0001 C CNN
+	1    14200 11300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW87
+U 1 1 651A6E69
+P 13450 11300
+F 0 "SW87" H 13450 11585 50  0000 C CNN
+F 1 "SW_Push" H 13450 11494 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_2.00u_Vertical_PCB" H 13450 11500 50  0001 C CNN
+F 3 "~" H 13450 11500 50  0001 C CNN
+	1    13450 11300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW86
+U 1 1 651A6E76
+P 12700 11300
+F 0 "SW86" H 12700 11585 50  0000 C CNN
+F 1 "SW_Push" H 12700 11494 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_Plate" H 12700 11500 50  0001 C CNN
+F 3 "~" H 12700 11500 50  0001 C CNN
+	1    12700 11300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW85
+U 1 1 651A6E83
+P 11950 11300
+F 0 "SW85" H 11950 11585 50  0000 C CNN
+F 1 "SW_Push" H 11950 11494 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_Plate" H 11950 11500 50  0001 C CNN
+F 3 "~" H 11950 11500 50  0001 C CNN
+	1    11950 11300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW84
+U 1 1 651A6E90
+P 11200 11300
+F 0 "SW84" H 11200 11585 50  0000 C CNN
+F 1 "SW_Push" H 11200 11494 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_Plate" H 11200 11500 50  0001 C CNN
+F 3 "~" H 11200 11500 50  0001 C CNN
+	1    11200 11300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW83
+U 1 1 651A6E9D
+P 10450 11300
+F 0 "SW83" H 10450 11585 50  0000 C CNN
+F 1 "SW_Push" H 10450 11494 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_Plate" H 10450 11500 50  0001 C CNN
+F 3 "~" H 10450 11500 50  0001 C CNN
+	1    10450 11300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW82
+U 1 1 651A6EA9
+P 9700 11300
+F 0 "SW82" H 9700 11585 50  0000 C CNN
+F 1 "SW_Push" H 9700 11494 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_Plate" H 9700 11500 50  0001 C CNN
+F 3 "~" H 9700 11500 50  0001 C CNN
+	1    9700 11300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW98
+U 1 1 651A705D
+P 9700 12950
+F 0 "SW98" H 9700 13235 50  0000 C CNN
+F 1 "SW_Push" H 9700 13144 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_Plate" H 9700 13150 50  0001 C CNN
+F 3 "~" H 9700 13150 50  0001 C CNN
+	1    9700 12950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9500 2100 9500 2700
+Wire Wire Line
+	10250 2100 10250 2700
+Wire Wire Line
+	11000 2100 11000 2700
+Wire Wire Line
+	11750 2100 11750 2700
+Wire Wire Line
+	12500 2100 12500 2700
+Wire Wire Line
+	13250 2100 13250 2700
+Wire Wire Line
+	14000 2100 14000 2700
+Wire Wire Line
+	14750 2100 14750 2700
+Wire Wire Line
+	15500 2100 15500 2700
+Wire Wire Line
+	16250 2100 16250 2700
+Wire Wire Line
+	17000 2100 17000 2700
+Wire Wire Line
+	17750 2100 17750 2700
+Wire Wire Line
+	18500 2100 18500 2700
+Wire Wire Line
+	19250 2100 19250 2700
+Wire Wire Line
+	20000 2100 20000 2700
+$Comp
+L Switch:SW_Push SW16
+U 1 1 644B1697
+P 10450 12950
+F 0 "SW16" H 10450 13235 50  0000 C CNN
+F 1 "SW_Push" H 10450 13144 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_Plate" H 10450 13150 50  0001 C CNN
+F 3 "~" H 10450 13150 50  0001 C CNN
+	1    10450 12950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW33
+U 1 1 64DBEA42
+P 20950 4350
+F 0 "SW33" H 20950 4635 50  0000 C CNN
+F 1 "SW_Push" H 20950 4544 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_Plate" H 20950 4550 50  0001 C CNN
+F 3 "~" H 20950 4550 50  0001 C CNN
+	1    20950 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW32
+U 1 1 64DBEA4F
+P 20200 4350
+F 0 "SW32" H 20200 4635 50  0000 C CNN
+F 1 "SW_Push" H 20200 4544 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_Plate" H 20200 4550 50  0001 C CNN
+F 3 "~" H 20200 4550 50  0001 C CNN
+	1    20200 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW31
+U 1 1 64DBEA5C
+P 19450 4350
+F 0 "SW31" H 19450 4635 50  0000 C CNN
+F 1 "SW_Push" H 19450 4544 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_2.00u_PCB" H 19450 4550 50  0001 C CNN
+F 3 "~" H 19450 4550 50  0001 C CNN
+	1    19450 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW30
+U 1 1 64DBEA69
+P 18700 4350
+F 0 "SW30" H 18700 4635 50  0000 C CNN
+F 1 "SW_Push" H 18700 4544 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_Plate" H 18700 4550 50  0001 C CNN
+F 3 "~" H 18700 4550 50  0001 C CNN
+	1    18700 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW29
+U 1 1 64DBEA76
+P 17950 4350
+F 0 "SW29" H 17950 4635 50  0000 C CNN
+F 1 "SW_Push" H 17950 4544 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_Plate" H 17950 4550 50  0001 C CNN
+F 3 "~" H 17950 4550 50  0001 C CNN
+	1    17950 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW28
+U 1 1 64DBEA83
+P 17200 4350
+F 0 "SW28" H 17200 4635 50  0000 C CNN
+F 1 "SW_Push" H 17200 4544 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_Plate" H 17200 4550 50  0001 C CNN
+F 3 "~" H 17200 4550 50  0001 C CNN
+	1    17200 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW27
+U 1 1 64DBEA90
+P 16450 4350
+F 0 "SW27" H 16450 4635 50  0000 C CNN
+F 1 "SW_Push" H 16450 4544 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_Plate" H 16450 4550 50  0001 C CNN
+F 3 "~" H 16450 4550 50  0001 C CNN
+	1    16450 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW26
+U 1 1 64DBEA9D
+P 15700 4350
+F 0 "SW26" H 15700 4635 50  0000 C CNN
+F 1 "SW_Push" H 15700 4544 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_Plate" H 15700 4550 50  0001 C CNN
+F 3 "~" H 15700 4550 50  0001 C CNN
+	1    15700 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW25
+U 1 1 64DBEAAA
+P 14950 4350
+F 0 "SW25" H 14950 4635 50  0000 C CNN
+F 1 "SW_Push" H 14950 4544 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_Plate" H 14950 4550 50  0001 C CNN
+F 3 "~" H 14950 4550 50  0001 C CNN
+	1    14950 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW24
+U 1 1 64DBEAB7
+P 14200 4350
+F 0 "SW24" H 14200 4635 50  0000 C CNN
+F 1 "SW_Push" H 14200 4544 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_Plate" H 14200 4550 50  0001 C CNN
+F 3 "~" H 14200 4550 50  0001 C CNN
+	1    14200 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW23
+U 1 1 64DBEAC4
+P 13450 4350
+F 0 "SW23" H 13450 4635 50  0000 C CNN
+F 1 "SW_Push" H 13450 4544 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_Plate" H 13450 4550 50  0001 C CNN
+F 3 "~" H 13450 4550 50  0001 C CNN
+	1    13450 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW22
+U 1 1 64DBEAD1
+P 12700 4350
+F 0 "SW22" H 12700 4635 50  0000 C CNN
+F 1 "SW_Push" H 12700 4544 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_Plate" H 12700 4550 50  0001 C CNN
+F 3 "~" H 12700 4550 50  0001 C CNN
+	1    12700 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW21
+U 1 1 64DBEADE
+P 11950 4350
+F 0 "SW21" H 11950 4635 50  0000 C CNN
+F 1 "SW_Push" H 11950 4544 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_Plate" H 11950 4550 50  0001 C CNN
+F 3 "~" H 11950 4550 50  0001 C CNN
+	1    11950 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW20
+U 1 1 64DBEAEB
+P 11200 4350
+F 0 "SW20" H 11200 4635 50  0000 C CNN
+F 1 "SW_Push" H 11200 4544 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_Plate" H 11200 4550 50  0001 C CNN
+F 3 "~" H 11200 4550 50  0001 C CNN
+	1    11200 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW19
+U 1 1 64DBEAF8
+P 10450 4350
+F 0 "SW19" H 10450 4635 50  0000 C CNN
+F 1 "SW_Push" H 10450 4544 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_Plate" H 10450 4550 50  0001 C CNN
+F 3 "~" H 10450 4550 50  0001 C CNN
+	1    10450 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW18
+U 1 1 64DBEB04
+P 9700 4350
+F 0 "SW18" H 9700 4635 50  0000 C CNN
+F 1 "SW_Push" H 9700 4544 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_Plate" H 9700 4550 50  0001 C CNN
+F 3 "~" H 9700 4550 50  0001 C CNN
+	1    9700 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW15
+U 1 1 6406DE30
+P 20200 2700
+F 0 "SW15" H 20200 2985 50  0000 C CNN
+F 1 "SW_Push" H 20200 2894 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_Plate" H 20200 2900 50  0001 C CNN
+F 3 "~" H 20200 2900 50  0001 C CNN
+	1    20200 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW14
+U 1 1 6406DE21
+P 19450 2700
+F 0 "SW14" H 19450 2985 50  0000 C CNN
+F 1 "SW_Push" H 19450 2894 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_Plate" H 19450 2900 50  0001 C CNN
+F 3 "~" H 19450 2900 50  0001 C CNN
+	1    19450 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW13
+U 1 1 6406DE12
+P 18700 2700
+F 0 "SW13" H 18700 2985 50  0000 C CNN
+F 1 "SW_Push" H 18700 2894 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_Plate" H 18700 2900 50  0001 C CNN
+F 3 "~" H 18700 2900 50  0001 C CNN
+	1    18700 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW12
+U 1 1 6406DE03
+P 17950 2700
+F 0 "SW12" H 17950 2985 50  0000 C CNN
+F 1 "SW_Push" H 17950 2894 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_Plate" H 17950 2900 50  0001 C CNN
+F 3 "~" H 17950 2900 50  0001 C CNN
+	1    17950 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW11
+U 1 1 6406DDF4
+P 17200 2700
+F 0 "SW11" H 17200 2985 50  0000 C CNN
+F 1 "SW_Push" H 17200 2894 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_Plate" H 17200 2900 50  0001 C CNN
+F 3 "~" H 17200 2900 50  0001 C CNN
+	1    17200 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW10
+U 1 1 6406DDE5
+P 16450 2700
+F 0 "SW10" H 16450 2985 50  0000 C CNN
+F 1 "SW_Push" H 16450 2894 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_Plate" H 16450 2900 50  0001 C CNN
+F 3 "~" H 16450 2900 50  0001 C CNN
+	1    16450 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW9
+U 1 1 6406DDD6
+P 15700 2700
+F 0 "SW9" H 15700 2985 50  0000 C CNN
+F 1 "SW_Push" H 15700 2894 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_Plate" H 15700 2900 50  0001 C CNN
+F 3 "~" H 15700 2900 50  0001 C CNN
+	1    15700 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW8
+U 1 1 6405E7B0
+P 14950 2700
+F 0 "SW8" H 14950 2985 50  0000 C CNN
+F 1 "SW_Push" H 14950 2894 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_Plate" H 14950 2900 50  0001 C CNN
+F 3 "~" H 14950 2900 50  0001 C CNN
+	1    14950 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW7
+U 1 1 6405E7A1
+P 14200 2700
+F 0 "SW7" H 14200 2985 50  0000 C CNN
+F 1 "SW_Push" H 14200 2894 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_Plate" H 14200 2900 50  0001 C CNN
+F 3 "~" H 14200 2900 50  0001 C CNN
+	1    14200 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW6
+U 1 1 6405E792
+P 13450 2700
+F 0 "SW6" H 13450 2985 50  0000 C CNN
+F 1 "SW_Push" H 13450 2894 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_Plate" H 13450 2900 50  0001 C CNN
+F 3 "~" H 13450 2900 50  0001 C CNN
+	1    13450 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW5
+U 1 1 6405E783
+P 12700 2700
+F 0 "SW5" H 12700 2985 50  0000 C CNN
+F 1 "SW_Push" H 12700 2894 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_Plate" H 12700 2900 50  0001 C CNN
+F 3 "~" H 12700 2900 50  0001 C CNN
+	1    12700 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW4
+U 1 1 640557DD
+P 11950 2700
+F 0 "SW4" H 11950 2985 50  0000 C CNN
+F 1 "SW_Push" H 11950 2894 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_Plate" H 11950 2900 50  0001 C CNN
+F 3 "~" H 11950 2900 50  0001 C CNN
+	1    11950 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW3
+U 1 1 640557CE
+P 11200 2700
+F 0 "SW3" H 11200 2985 50  0000 C CNN
+F 1 "SW_Push" H 11200 2894 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_Plate" H 11200 2900 50  0001 C CNN
+F 3 "~" H 11200 2900 50  0001 C CNN
+	1    11200 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW2
+U 1 1 64048397
+P 10450 2700
+F 0 "SW2" H 10450 2985 50  0000 C CNN
+F 1 "SW_Push" H 10450 2894 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_Plate" H 10450 2900 50  0001 C CNN
+F 3 "~" H 10450 2900 50  0001 C CNN
+	1    10450 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW1
+U 1 1 63E5F403
+P 9700 2700
+F 0 "SW1" H 9700 2985 50  0000 C CNN
+F 1 "SW_Push" H 9700 2894 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_Plate" H 9700 2900 50  0001 C CNN
+F 3 "~" H 9700 2900 50  0001 C CNN
+	1    9700 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 10050 3300 10150
+Connection ~ 3300 10150
+Wire Wire Line
+	4100 10150 4100 10050
+Wire Wire Line
+	3300 10150 4100 10150
+Wire Wire Line
+	3300 10150 3300 10200
+Wire Wire Line
+	2500 10150 3300 10150
+Wire Wire Line
+	2500 10050 2500 10150
+$Comp
+L power:GND #PWR0101
+U 1 1 63E292B0
+P 3300 10200
+F 0 "#PWR0101" H 3300 9950 50  0001 C CNN
+F 1 "GND" H 3305 10027 50  0000 C CNN
+F 2 "" H 3300 10200 50  0001 C CNN
+F 3 "" H 3300 10200 50  0001 C CNN
+	1    3300 10200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H9
+U 1 1 63E292B6
+P 4100 9950
+F 0 "H9" H 4200 9999 50  0000 L CNN
+F 1 "MountingHole_Pad" H 3750 10150 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_Pad_Via" H 4100 9950 50  0001 C CNN
+F 3 "~" H 4100 9950 50  0001 C CNN
+	1    4100 9950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H8
+U 1 1 63E292BC
+P 3300 9950
+F 0 "H8" H 3400 9999 50  0000 L CNN
+F 1 "MountingHole_Pad" H 2950 10150 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_Pad_Via" H 3300 9950 50  0001 C CNN
+F 3 "~" H 3300 9950 50  0001 C CNN
+	1    3300 9950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H7
+U 1 1 63E292C2
+P 2500 9950
+F 0 "H7" H 2600 9999 50  0000 L CNN
+F 1 "MountingHole_Pad" H 2150 10150 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_Pad_Via" H 2500 9950 50  0001 C CNN
+F 3 "~" H 2500 9950 50  0001 C CNN
+	1    2500 9950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 63E50AEB
+P 3300 11100
+F 0 "#PWR0103" H 3300 10850 50  0001 C CNN
+F 1 "GND" H 3305 10927 50  0000 C CNN
+F 2 "" H 3300 11100 50  0001 C CNN
+F 3 "" H 3300 11100 50  0001 C CNN
+	1    3300 11100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H10
+U 1 1 63E50AF7
+P 3300 10850
+F 0 "H10" H 3400 10899 50  0000 L CNN
+F 1 "MountingHole_Pad" H 2950 11050 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_Pad_Via" H 3300 10850 50  0001 C CNN
+F 3 "~" H 3300 10850 50  0001 C CNN
+	1    3300 10850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 10950 3300 11100
+$EndSCHEMATC
