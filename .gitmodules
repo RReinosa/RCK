@@ -10,3 +10,6 @@
 [submodule "pcb/Footprints/kicad-library"]
 	path = pcb/Footprints/kicad-library
 	url = https://github.com/KiCad/kicad-library.git
+[submodule "v1.0/software/qmk_firmware"]
+	path = v1.0/software/qmk_firmware
+	url = https://github.com/qmk/qmk_firmware

@@ -26,7 +26,7 @@
     (35 F.Paste user)
     (36 B.SilkS user)
     (37 F.SilkS user)
-    (38 B.Mask user)
+    (38 B.Mask user hide)
     (39 F.Mask user)
     (40 Dwgs.User user hide)
     (41 Cmts.User user hide)
@@ -41,7 +41,7 @@
   )
 
   (setup
-    (last_trace_width 0.4)
+    (last_trace_width 0.15)
     (user_trace_width 0.4)
     (trace_clearance 0.2)
     (zone_clearance 0.508)
