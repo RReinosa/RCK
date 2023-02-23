@@ -1,5 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:test-cache
+LIBS:pcb-cache
 EELAYER 30 0
 EELAYER END
 $Descr A2 23386 16535
@@ -176,17 +176,6 @@ Text GLabel 7050 3000 2    50   Input ~ 0
 D-
 NoConn ~ 2000 -600
 NoConn ~ 3500 11650
-$Comp
-L Connector_Generic:Conn_02x03_Counter_Clockwise J2
-U 1 1 676CACE0
-P 3150 6800
-F 0 "J2" H 3200 7117 50  0000 C CNN
-F 1 "ISP" H 3200 7026 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical" H 3150 6800 50  0001 C CNN
-F 3 "~" H 3150 6800 50  0001 C CNN
-	1    3150 6800
-	1    0    0    -1  
-$EndComp
 Text GLabel 2950 6700 0    50   Input ~ 0
 MISO
 Text GLabel 2950 6800 0    50   Input ~ 0
@@ -250,17 +239,6 @@ NoConn ~ 3750 3450
 Text GLabel 3750 4850 2    50   Input ~ 0
 R0
 $Comp
-L Device:R_Small R7
-U 1 1 63D596F6
-P 4200 4550
-F 0 "R7" V 4004 4550 50  0000 C CNN
-F 1 "10k" V 4095 4550 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric" H 4200 4550 50  0001 C CNN
-F 3 "~" H 4200 4550 50  0001 C CNN
-	1    4200 4550
-	0    1    1    0   
-$EndComp
-$Comp
 L power:GND #PWR09
 U 1 1 63D5B1DE
 P 4550 4550
@@ -270,30 +248,6 @@ F 2 "" H 4550 4550 50  0001 C CNN
 F 3 "" H 4550 4550 50  0001 C CNN
 	1    4550 4550
 	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4300 4550 4550 4550
-$Comp
-L Device:R_Small R3
-U 1 1 63D5D756
-P 2100 3450
-F 0 "R3" V 1904 3450 50  0000 C CNN
-F 1 "22" V 1995 3450 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric" H 2100 3450 50  0001 C CNN
-F 3 "~" H 2100 3450 50  0001 C CNN
-	1    2100 3450
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R_Small R6
-U 1 1 63D5DFD0
-P 2100 3550
-F 0 "R6" V 2200 3550 50  0000 C CNN
-F 1 "22" V 2300 3550 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric" H 2100 3550 50  0001 C CNN
-F 3 "~" H 2100 3550 50  0001 C CNN
-	1    2100 3550
-	0    1    1    0   
 $EndComp
 $Comp
 L power:GND #PWR07
@@ -324,7 +278,7 @@ L Device:C_Small C6
 U 1 1 63DA152E
 P 1750 2900
 F 0 "C6" V 1650 3000 50  0000 C CNN
-F 1 "22uF" V 1650 2750 50  0000 C CNN
+F 1 "22pF" V 1650 2750 50  0000 C CNN
 F 2 "Capacitor_SMD:C_1206_3216Metric" H 1750 2900 50  0001 C CNN
 F 3 "~" H 1750 2900 50  0001 C CNN
 	1    1750 2900
@@ -430,8 +384,6 @@ F 3 "~" H 3450 2000 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3450 1900 3850 1900
-Wire Wire Line
-	3750 4550 4100 4550
 $Comp
 L power:GND #PWR011
 U 1 1 63D58706
@@ -493,31 +445,12 @@ F 3 "~" H 2500 2050 50  0001 C CNN
 	1    2500 2050
 	1    0    0    -1  
 $EndComp
-$Comp
-L MCU_Microchip_ATmega:ATmega32U4-AU U1
-U 1 1 63D52C27
-P 3150 3950
-F 0 "U1" V 2450 2600 50  0000 C CNN
-F 1 "ATmega32U4-AU" V 2550 2600 50  0000 C CNN
-F 2 "Package_QFP:TQFP-44_10x10mm_P0.8mm" H 3150 3950 50  0001 C CIN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-7766-8-bit-AVR-ATmega16U4-32U4_Datasheet.pdf" H 3150 3950 50  0001 C CNN
-	1    3150 3950
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2500 2450 2500 2150
 Wire Wire Line
 	2500 1750 2500 1950
 Wire Wire Line
 	2500 1750 3050 1750
-Wire Wire Line
-	2550 3550 2200 3550
-Wire Wire Line
-	2550 3450 2200 3450
-Wire Wire Line
-	1850 3450 2000 3450
-Wire Wire Line
-	2000 3550 1850 3550
 Wire Wire Line
 	2550 3750 2250 3750
 Wire Wire Line
@@ -586,7 +519,7 @@ L Device:C_Small C5
 U 1 1 63D9A999
 P 1750 2550
 F 0 "C5" V 2000 2550 50  0000 C CNN
-F 1 "22uF" V 1900 2550 50  0000 C CNN
+F 1 "22pF" V 1900 2550 50  0000 C CNN
 F 2 "Capacitor_SMD:C_1206_3216Metric" H 1750 2550 50  0001 C CNN
 F 3 "~" H 1750 2550 50  0001 C CNN
 	1    1750 2550
@@ -688,7 +621,6 @@ Wire Wire Line
 	2150 3150 2150 3050
 Wire Wire Line
 	2150 3050 2550 3050
-NoConn ~ 2950 6900
 Wire Wire Line
 	7300 2400 7300 2450
 Wire Wire Line
@@ -781,4 +713,39 @@ NoConn ~ 3750 2850
 NoConn ~ 3750 3350
 Wire Wire Line
 	2550 3250 2250 3250
+$Comp
+L MCU_Microchip_ATmega:ATmega32U4-AU U1
+U 1 1 63D52C27
+P 3150 3950
+F 0 "U1" V 2450 2600 50  0000 C CNN
+F 1 "ATmega32U4-AU" V 2550 2600 50  0000 C CNN
+F 2 "Package_QFP:TQFP-44_10x10mm_P0.8mm" H 3150 3950 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-7766-8-bit-AVR-ATmega16U4-32U4_Datasheet.pdf" H 3150 3950 50  0001 C CNN
+	1    3150 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3750 4550 4550 4550
+Wire Wire Line
+	1850 3550 2550 3550
+Wire Wire Line
+	1850 3450 2550 3450
+$Comp
+L Connector_Generic:Conn_02x03_Counter_Clockwise J2
+U 1 1 676CACE0
+P 3150 6800
+F 0 "J2" H 3200 7117 50  0000 C CNN
+F 1 "ISP" H 3200 7026 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical" H 3150 6800 50  0001 C CNN
+F 3 "~" H 3150 6800 50  0001 C CNN
+	1    3150 6800
+	1    0    0    -1  
+$EndComp
+Text GLabel 2950 6900 0    50   Input ~ 0
+RST
+Text GLabel 2400 2450 0    50   Input ~ 0
+RST
+Wire Wire Line
+	2500 2450 2400 2450
+Connection ~ 2500 2450
 $EndSCHEMATC
