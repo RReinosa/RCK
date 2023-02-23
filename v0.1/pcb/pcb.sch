@@ -224,7 +224,7 @@ NoConn ~ 3750 4650
 NoConn ~ 3750 3950
 NoConn ~ 3750 3850
 NoConn ~ 3750 3750
-Text GLabel 3750 5150 2    50   Input ~ 0
+Text GLabel 3750 3650 2    50   Input ~ 0
 LED0
 Text GLabel 3750 2750 2    50   Input ~ 0
 MISO
@@ -708,22 +708,10 @@ NoConn ~ 3750 2950
 NoConn ~ 3750 5250
 NoConn ~ 3750 5350
 NoConn ~ 3750 4350
-NoConn ~ 3750 3650
 NoConn ~ 3750 2850
 NoConn ~ 3750 3350
 Wire Wire Line
 	2550 3250 2250 3250
-$Comp
-L MCU_Microchip_ATmega:ATmega32U4-AU U1
-U 1 1 63D52C27
-P 3150 3950
-F 0 "U1" V 2450 2600 50  0000 C CNN
-F 1 "ATmega32U4-AU" V 2550 2600 50  0000 C CNN
-F 2 "Package_QFP:TQFP-44_10x10mm_P0.8mm" H 3150 3950 50  0001 C CIN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-7766-8-bit-AVR-ATmega16U4-32U4_Datasheet.pdf" H 3150 3950 50  0001 C CNN
-	1    3150 3950
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	3750 4550 4550 4550
 Wire Wire Line
@@ -748,4 +736,16 @@ RST
 Wire Wire Line
 	2500 2450 2400 2450
 Connection ~ 2500 2450
+$Comp
+L MCU_Microchip_ATmega:ATmega32U4-AU U1
+U 1 1 63D52C27
+P 3150 3950
+F 0 "U1" V 2450 2600 50  0000 C CNN
+F 1 "ATmega32U4-AU" V 2550 2600 50  0000 C CNN
+F 2 "Package_QFP:TQFP-44_10x10mm_P0.8mm" H 3150 3950 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-7766-8-bit-AVR-ATmega16U4-32U4_Datasheet.pdf" H 3150 3950 50  0001 C CNN
+	1    3150 3950
+	1    0    0    -1  
+$EndComp
+NoConn ~ 3750 5150
 $EndSCHEMATC
