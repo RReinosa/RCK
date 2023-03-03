@@ -1,16 +1,16 @@
 // Key aliases
 
-#define XXXXXX		KEY_ERROR_UNDEFINED
+#define XXXXXX	  KEY_ERROR_UNDEFINED
 
-#define STD_1		KEY_ESC
-#define STD_2		KEY_F1
-#define STD_3		KEY_F2
-#define STD_4		KEY_F3
-#define STD_5		KEY_F4
-#define STD_6		KEY_F5
-#define STD_7		KEY_F6
-#define STD_8		KEY_F7
-#define STD_9		KEY_F8
+#define STD_01		KEY_ESC
+#define STD_02		KEY_F1
+#define STD_03		KEY_F2
+#define STD_04		KEY_F3
+#define STD_05		KEY_F4
+#define STD_06		KEY_F5
+#define STD_07		KEY_F6
+#define STD_08		KEY_F7
+#define STD_09		KEY_F8
 #define STD_10		KEY_F9
 #define STD_11		KEY_F10
 #define STD_12		KEY_F11

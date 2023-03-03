@@ -249,7 +249,6 @@ D+
 Text GLabel 7250 5900 2    50   Input ~ 0
 D-
 NoConn ~ 2000 -600
-NoConn ~ 3500 11650
 $Comp
 L Connector_Generic:Conn_02x03_Counter_Clockwise J2
 U 1 1 676CACE0
