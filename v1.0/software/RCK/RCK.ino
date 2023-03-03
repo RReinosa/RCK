@@ -8,7 +8,7 @@ void setup() {
 
   EEPROM.begin();
   uint32_t color = getColorEEPROM();
-  
+
   for (int i = 0; i < LED_COUNT; i++) {
     strip.setPixelColor(i, color);          // Set the color of the all LEDs
     strip.show();                           // Update the LEDs with the new color
@@ -18,18 +18,24 @@ void setup() {
     pinMode(rowPin[i], OUTPUT);             // Configure rowsPins as input with pull-up resistor
     digitalWrite(rowPin[i], LOW);
   }
-  for (int i = 0; i < colPinLength; i++) {
-    pinMode(colPin[i], INPUT_PULLUP);       // Configure colsPins as output with pull-up resistor
+  for (int i = 0; i < muxPinLength; i++) {
+    pinMode(muxPin[i], OUTPUT);             // Configure rowsPins as input with pull-up resistor
   }
+  pinMode(colPin, INPUT_PULLUP);            // Configure colsPins as output with pull-up resistor
   BootKeyboard.begin();                     // Sends a clean report to the host. This is important on any Arduino type.
 }
 
 void loop() {
   delayMicroseconds(DELAYVAL);
-  for (int i = 0; i < rowPinLength; i++) {
+  for (byte i = 0; i < rowPinLength; i++) {
     digitalWrite(rowPin[i], LOW);
-    for (int j = 0; j < colPinLength; j++) {
-      if (digitalRead(colPin[j]) == LOW) {
+    for (byte j = 0; j < colPinLength; j++) {
+      for (byte k = 0; k < muxPinLength - 1; k++) {
+        digitalWrite(muxPin[k], bitRead(j, k));
+      }
+      digitalWrite(muxPin[4], 0);
+      delayMicroseconds(200);  // Debouncing delay
+      if (digitalRead(colPin) == LOW) {
         if (state[i][j] == false) {
           state[i][j] = true;
           if ( i == 0 && j > 0 && j < 13  && state[FNROW][FNCOL]) {

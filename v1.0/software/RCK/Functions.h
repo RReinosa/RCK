@@ -6,13 +6,15 @@
 
 #define rowPinLength 7        // Define the size of rows array
 #define colPinLength 16        // Define the size of cols array
+#define muxPinLength 5
 #define DELAYVAL 1000         // Define standard delay
 #define LED_COUNT 97          // Define number of pixels
 #define FNROW 6               // Define FN row
 #define FNCOL 11              // Define FN col
 
 const int rowPin[rowPinLength] = {A5, A4, A3, A2, A1, A0, 5};      // Define the pins used for the rows and columns of switches
-const int colPin[colPinLength] = {6, 8, 9, 10};
+const int colPin = 12;
+const int muxPin[muxPinLength] = {6, 8, 9, 10, 4};
 const int LED_PIN = 3;                                             // Define the pin used for RGBWs
 
 const KeyboardKeycode standard[rowPinLength][colPinLength] = {
@@ -148,21 +150,32 @@ void fn(int key) {
     case 4:
       updateBrightness();
     case 5:
-      updateBrightness();
+      Keyboard.press(MEDIA_PREVIOUS);
+      delayMicroseconds(DELAYVAL);
     case 6:
-      updateBrightness();
+      Keyboard.press(MEDIA_NEXT);
+      delayMicroseconds(DELAYVAL);
     case 7:
-      updateBrightness();
+      Keyboard.press(MEDIA_PLAY_PAUSE);
+      delayMicroseconds(DELAYVAL);
     case 8:
-      updateBrightness();
+      Keyboard.press(MEDIA_STOP);
+      delayMicroseconds(DELAYVAL);
     case 9:
-      updateBrightness();
+      Keyboard.press(MEDIA_VOLUME_MUTE);
+      delayMicroseconds(DELAYVAL);
     case 10:
-      updateBrightness();
+      Keyboard.press(MEDIA_VOLUME_DOWN);
+      delayMicroseconds(DELAYVAL);
     case 11:
-      updateBrightness();
+      Keyboard.press(MEDIA_VOLUME_UP);
+      delayMicroseconds(DELAYVAL);
     case 12:
-      updateBrightness();
+      Keyboard.press(KEY_LEFT_CTRL);
+      delayMicroseconds(DELAYVAL);
+      Keyboard.press(KEY_LEFT_SHIFT);
+      delayMicroseconds(DELAYVAL);
+      Keyboard.press(KEY_S);
     default:
       break;
   }
