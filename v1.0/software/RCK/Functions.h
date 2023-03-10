@@ -9,7 +9,7 @@
 #define muxPinLength 5
 #define DELAYVAL 1000         // Define standard delay
 #define LED_COUNT 97          // Define number of pixels
-#define FNROW 6               // Define FN row
+#define FNROW 5               // Define FN row
 #define FNCOL 11              // Define FN col
 
 const int rowPin[rowPinLength] = {A5, A4, A3, A2, A1, A0, 5};      // Define the pins used for the rows and columns of switches
@@ -37,8 +37,15 @@ boolean state[rowPinLength][colPinLength] {
   {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}
 };
 
-Adafruit_NeoPixel strip(LED_COUNT, LED_PIN, NEO_GRBW + NEO_KHZ800); // Initialize Adafruit module
+updateCol(int key) {
+  digitalWrite(muxPin[0], bitRead(key, 0));
+  digitalWrite(muxPin[1], bitRead(key, 1));
+  digitalWrite(muxPin[2], bitRead(key, 2));
+  digitalWrite(muxPin[3], bitRead(key, 3));
+  digitalWrite(muxPin[4], 0);
+}
 
+Adafruit_NeoPixel strip(LED_COUNT, LED_PIN, NEO_GRBW + NEO_KHZ800); // Initialize Adafruit module
 
 uint32_t getColorEEPROM() {                      // read brightness value from the EEPROM
   uint8_t white = EEPROM.read(0);
@@ -46,14 +53,23 @@ uint32_t getColorEEPROM() {                      // read brightness value from t
   uint8_t green = EEPROM.read(2);
   uint8_t blue  = EEPROM.read(3);
 
-  return ((uint32_t)white << 24) | ((uint32_t)red << 16) | ((uint32_t)green << 8) | (uint32_t)blue;
+  if (white == 0xFF && red == 0xFF && blue == 0xFF && green == 0xFF) {
+    EEPROM.update(0, 0);
+    EEPROM.update(1, 0);
+    EEPROM.update(2, 0);
+    EEPROM.update(3, 0);
+    EEPROM.update(4, 0);
+    return 0x00000000;
+  } else {
+    return ((uint32_t)white << 24) | ((uint32_t)red << 16) | ((uint32_t)green << 8) | (uint32_t)blue;
+  }
 }
 
 void updateColorEEPROM(uint32_t color) {
   uint8_t white = (color >> 24) & 0xFF;
-  uint8_t red = (color >> 16) & 0xFF;
+  uint8_t red   = (color >> 16) & 0xFF;
   uint8_t green = (color >> 8) & 0xFF;
-  uint8_t blue = color & 0xFF;
+  uint8_t blue  = color & 0xFF;
 
   EEPROM.update(0, white);
   EEPROM.update(1, red);
@@ -64,10 +80,10 @@ void updateColorEEPROM(uint32_t color) {
 
 void updateColor() {
   uint32_t color = getColorEEPROM();
-  uint8_t white = (color >> 24) & 0xFF;
-  uint8_t red = (color >> 16) & 0xFF;
-  uint8_t green = (color >> 8) & 0xFF;
-  uint8_t blue = color & 0xFF;
+  uint8_t white  = (color >> 24) & 0xFF;
+  uint8_t red    = (color >> 16) & 0xFF;
+  uint8_t green  = (color >> 8) & 0xFF;
+  uint8_t blue   = color & 0xFF;
 
   // Move the bits to alternate the colors
   uint8_t tmp;
@@ -94,10 +110,10 @@ void updateColor() {
 
 void updateBrightness() {
   uint32_t color = getColorEEPROM();
-  uint8_t white = (color >> 24) & 0xFF;
-  uint8_t red = (color >> 16) & 0xFF;
-  uint8_t green = (color >> 8) & 0xFF;
-  uint8_t blue = color & 0xFF;
+  uint8_t white  = (color >> 24) & 0xFF;
+  uint8_t red    = (color >> 16) & 0xFF;
+  uint8_t green  = (color >> 8) & 0xFF;
+  uint8_t blue   = color & 0xFF;
   uint8_t currentColor = EEPROM.read(4);
 
   switch (currentColor) {
@@ -145,37 +161,52 @@ void fn(int key) {
       break;
     case 2:
       updateBrightness();
+      break;
     case 3:
       updateBrightness();
+      break;
     case 4:
       updateBrightness();
+      break;
     case 5:
-      Keyboard.press(MEDIA_PREVIOUS);
+      Consumer.write(MEDIA_PREVIOUS);
       delayMicroseconds(DELAYVAL);
+      break;
     case 6:
-      Keyboard.press(MEDIA_NEXT);
+      Consumer.write(MEDIA_NEXT);
       delayMicroseconds(DELAYVAL);
+      break;
     case 7:
-      Keyboard.press(MEDIA_PLAY_PAUSE);
+      Consumer.write(MEDIA_PLAY_PAUSE);
       delayMicroseconds(DELAYVAL);
+      break;
     case 8:
-      Keyboard.press(MEDIA_STOP);
+      Consumer.write(MEDIA_STOP);
       delayMicroseconds(DELAYVAL);
+      break;
     case 9:
-      Keyboard.press(MEDIA_VOLUME_MUTE);
+      Consumer.write(MEDIA_VOLUME_MUTE);
       delayMicroseconds(DELAYVAL);
+      break;
     case 10:
-      Keyboard.press(MEDIA_VOLUME_DOWN);
+      Consumer.write(MEDIA_VOLUME_DOWN);
       delayMicroseconds(DELAYVAL);
+      break;
     case 11:
-      Keyboard.press(MEDIA_VOLUME_UP);
+      Consumer.write(MEDIA_VOLUME_UP);
       delayMicroseconds(DELAYVAL);
+      break;
     case 12:
-      Keyboard.press(KEY_LEFT_CTRL);
+      Keyboard.press(KEY_LEFT_WINDOWS);
       delayMicroseconds(DELAYVAL);
       Keyboard.press(KEY_LEFT_SHIFT);
       delayMicroseconds(DELAYVAL);
       Keyboard.press(KEY_S);
+      delayMicroseconds(DELAYVAL);
+      Keyboard.release(KEY_LEFT_WINDOWS);
+      Keyboard.release(KEY_LEFT_SHIFT);
+      Keyboard.release(KEY_S);
+      break;
     default:
       break;
   }

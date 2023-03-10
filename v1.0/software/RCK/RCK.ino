@@ -4,7 +4,7 @@
 void setup() {
   strip.begin();                            // INITIALIZE NeoPixel strip object (REQUIRED)
   strip.show();                             // Turn OFF all pixels ASAP
-  strip.setBrightness(255);                 // Set BRIGHTNESS to about 1/5 (max = 255)
+  strip.setBrightness(50);                 // Set BRIGHTNESS to about 1/5 (max = 255)
 
   EEPROM.begin();
   uint32_t color = getColorEEPROM();
@@ -22,6 +22,7 @@ void setup() {
     pinMode(muxPin[i], OUTPUT);             // Configure rowsPins as input with pull-up resistor
   }
   pinMode(colPin, INPUT_PULLUP);            // Configure colsPins as output with pull-up resistor
+  
   BootKeyboard.begin();                     // Sends a clean report to the host. This is important on any Arduino type.
 }
 
@@ -30,10 +31,7 @@ void loop() {
   for (byte i = 0; i < rowPinLength; i++) {
     digitalWrite(rowPin[i], LOW);
     for (byte j = 0; j < colPinLength; j++) {
-      for (byte k = 0; k < muxPinLength - 1; k++) {
-        digitalWrite(muxPin[k], bitRead(j, k));
-      }
-      digitalWrite(muxPin[4], 0);
+      updateCol(j);
       delayMicroseconds(200);  // Debouncing delay
       if (digitalRead(colPin) == LOW) {
         if (state[i][j] == false) {
