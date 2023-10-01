@@ -22,8 +22,8 @@
     (31 B.Cu signal)
     (32 B.Adhes user hide)
     (33 F.Adhes user hide)
-    (34 B.Paste user hide)
-    (35 F.Paste user hide)
+    (34 B.Paste user)
+    (35 F.Paste user)
     (36 B.SilkS user)
     (37 F.SilkS user)
     (38 B.Mask user)
@@ -483,6 +483,7 @@
     (add_net "Net-(D191-Pad2)")
     (add_net "Net-(D192-Pad2)")
     (add_net "Net-(D193-Pad4)")
+    (add_net "Net-(D194-Pad4)")
     (add_net "Net-(D2-Pad2)")
     (add_net "Net-(D20-Pad4)")
     (add_net "Net-(D21-Pad4)")
@@ -569,8 +570,20 @@
     (add_net "Net-(D98-Pad2)")
     (add_net "Net-(D99-Pad2)")
     (add_net "Net-(F1-Pad2)")
+    (add_net "Net-(J1-PadA5)")
     (add_net "Net-(J1-PadA6)")
     (add_net "Net-(J1-PadA7)")
+    (add_net "Net-(J1-PadA8)")
+    (add_net "Net-(J1-PadB5)")
+    (add_net "Net-(J1-PadB8)")
+    (add_net "Net-(U2-Pad1)")
+    (add_net "Net-(U2-Pad12)")
+    (add_net "Net-(U2-Pad19)")
+    (add_net "Net-(U2-Pad20)")
+    (add_net "Net-(U2-Pad21)")
+    (add_net "Net-(U2-Pad22)")
+    (add_net "Net-(U2-Pad32)")
+    (add_net "Net-(U2-Pad8)")
     (add_net R0)
     (add_net R1)
     (add_net R2)
@@ -1343,6 +1356,11 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 90 180 180))
     )
+    (model ${KISYS3DMOD}/Stabilizers.3dshapes/Stabilizer_Cherry_MX_2.00u.stp
+      (offset (xyz -2.5 -5 -0.5))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 -90))
+    )
   )
 
   (module LED_SMD:LED_SK6812_PLCC4_5.0x5.0mm_P3.2mm (layer F.Cu) (tedit 63DD2821) (tstamp 63DA54FA)
@@ -1433,6 +1451,11 @@
       (offset (xyz -2.5 -6 5))
       (scale (xyz 1 1 1))
       (rotate (xyz 90 180 180))
+    )
+    (model ${KISYS3DMOD}/Stabilizers.3dshapes/Stabilizer_Cherry_MX_2.00u.stp
+      (offset (xyz -2.5 -5 -0.5))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 -90))
     )
   )
 
@@ -10235,10 +10258,10 @@
       (net 64 "Net-(D65-Pad2)"))
     (pad 1 thru_hole circle (at 0 0 180) (size 2.2 2.2) (drill 1.5) (layers *.Cu *.Mask)
       (net 192 C2))
-    (model ${KISYS3DMOD}/Button_Switch_Keyboard.3dshapes/SW_Cherry_MX_1.50u_Plate.wrl
-      (at (xyz 0 0 0))
+    (model ${KISYS3DMOD}/Button_Switch_Keyboard.3dshapes/SW_Cherry_MX_1.00u_PCB.step
+      (offset (xyz -2.5 -6 5))
       (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
+      (rotate (xyz 90 180 180))
     )
   )
 
@@ -10321,10 +10344,10 @@
     (pad 2 thru_hole circle (at -6.35 2.54 180) (size 2.2 2.2) (drill 1.5) (layers *.Cu *.Mask)
       (net 156 "Net-(D165-Pad2)"))
     (pad "" np_thru_hole circle (at -2.54 5.08 180) (size 4 4) (drill 4) (layers *.Cu *.Mask))
-    (model ${KISYS3DMOD}/Button_Switch_Keyboard.3dshapes/SW_Cherry_MX_1.50u_Plate.wrl
-      (at (xyz 0 0 0))
+    (model ${KISYS3DMOD}/Button_Switch_Keyboard.3dshapes/SW_Cherry_MX_1.00u_PCB.step
+      (offset (xyz -2.5 -6 5))
       (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
+      (rotate (xyz 90 180 180))
     )
   )
 
@@ -11006,6 +11029,11 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 90 180 180))
     )
+    (model ${KISYS3DMOD}/Stabilizers.3dshapes/Stabilizer_Cherry_MX_2.00u.stp
+      (offset (xyz -2.5 -5 -0.5))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module Button_Switch_Keyboard:SW_Cherry_MX_2.00u_PCB (layer F.Cu) (tedit 63D838FF) (tstamp 63DC3FA8)
@@ -11053,6 +11081,11 @@
       (offset (xyz -2.5 -6 5))
       (scale (xyz 1 1 1))
       (rotate (xyz 90 180 180))
+    )
+    (model ${KISYS3DMOD}/Stabilizers.3dshapes/Stabilizer_Cherry_MX_2.00u.stp
+      (offset (xyz -2.5 -5 -0.5))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
     )
   )
 
@@ -11141,6 +11174,11 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 90 180 180))
     )
+    (model ${KISYS3DMOD}/Stabilizers.3dshapes/Stabilizer_Cherry_MX_2.00u.stp
+      (offset (xyz -2.5 -5 -0.5))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 -90))
+    )
   )
 
   (module Button_Switch_Keyboard:SW_Cherry_MX_1.75u_Plate (layer F.Cu) (tedit 5A02FE24) (tstamp 63DC5136)
@@ -11178,10 +11216,10 @@
     (pad 2 thru_hole circle (at -6.35 2.54 180) (size 2.2 2.2) (drill 1.5) (layers *.Cu *.Mask)
       (net 96 "Net-(D99-Pad2)"))
     (pad "" np_thru_hole circle (at -2.54 5.08 180) (size 4 4) (drill 4) (layers *.Cu *.Mask))
-    (model ${KISYS3DMOD}/Button_Switch_Keyboard.3dshapes/SW_Cherry_MX_1.75u_Plate.wrl
-      (at (xyz 0 0 0))
+    (model ${KISYS3DMOD}/Button_Switch_Keyboard.3dshapes/SW_Cherry_MX_1.00u_PCB.step
+      (offset (xyz -2.5 -6 5))
       (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
+      (rotate (xyz 90 180 180))
     )
   )
 
@@ -11231,6 +11269,11 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 90 180 180))
     )
+    (model ${KISYS3DMOD}/Stabilizers.3dshapes/Stabilizer_Cherry_MX_6.25u.stp
+      (offset (xyz -2.5 -5 -0.5))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module Button_Switch_Keyboard:SW_Cherry_MX_1.25u_Plate (layer F.Cu) (tedit 5A02FE24) (tstamp 63DBC1F7)
@@ -11268,10 +11311,10 @@
     (pad 2 thru_hole circle (at -6.35 2.54 180) (size 2.2 2.2) (drill 1.5) (layers *.Cu *.Mask)
       (net 162 "Net-(D171-Pad2)"))
     (pad "" np_thru_hole circle (at -2.54 5.08 180) (size 4 4) (drill 4) (layers *.Cu *.Mask))
-    (model ${KISYS3DMOD}/Button_Switch_Keyboard.3dshapes/SW_Cherry_MX_1.25u_Plate.wrl
-      (at (xyz 0 0 0))
+    (model ${KISYS3DMOD}/Button_Switch_Keyboard.3dshapes/SW_Cherry_MX_1.00u_PCB.step
+      (offset (xyz -2.5 -6 5))
       (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
+      (rotate (xyz 90 180 180))
     )
   )
 
@@ -13944,9 +13987,9 @@
       (net 181 "Net-(F1-Pad2)"))
     (pad B1 smd rect (at 3.25 4.045) (size 0.6 1.45) (layers B.Cu B.Paste B.Mask)
       (net 1 GND))
-    (model ${KISYS3DMOD}/Connector_USB.3dshapes/USB_C_Receptacle_HRO_TYPE-C-31-M-12.wrl
-      (at (xyz 0 0 0))
-      (scale (xyz 1 1 1))
+    (model ${KISYS3DMOD}/Connector_USB.3dshapes/USB_C_Receptacle_HRO_TYPE-C-31-M-12.step
+      (offset (xyz -4.5 -3.5 0))
+      (scale (xyz 1 1 1.1))
       (rotate (xyz 0 0 0))
     )
   )
